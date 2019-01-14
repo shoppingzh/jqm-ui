@@ -1,0 +1,53 @@
+.ui-page-theme-a{
+	background-color: #efeff4;
+}
+::scrollbar{
+	width: 0;
+}
+::-webkit-scrollbar{
+	width: 0;
+}
+.demo{
+	margin-bottom: 35px;
+	box-sizing: border-box;
+}
+.demo>h5{
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.phone{
+	width: 320px;
+	height: 568px;
+	padding: 85px 20px;
+	/*margin: 15px;*/
+	background-color: #111;
+	border-radius: 55px;
+	border: 2px solid #aaa;
+	position: relative;
+}
+.phone>.header{
+	position: absolute;
+	width: 60px;
+	height: 10px;
+	border-radius: 20px;
+	top: 50px;
+	left: 50%;
+	margin-left: -30px;
+	background-color: #333;
+}
+.phone>.footer{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	box-sizing: border-box;
+	border: 5px solid #333;
+	bottom: 12.5px;
+	left: 50%;
+	margin-left: -30px;
+}
+.index-header>h3{
+	color: #444;
+}

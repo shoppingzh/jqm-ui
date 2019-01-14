@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+  </head>
+  <body>
+    <div data-role="page">
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        <a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
+        <h3>Listview</h3>
+      </div>
+      <div role="main" class="ui-content">
+
+        <div class="demo">
+          <h5>普通列表</h5>
+          <ul data-role="listview">
+            <li>
+              <div><p>Apple</p><p>Apple</p></div>
+              <div class="ui-lv-item-right">
+                <i class="badge badge-danger badge-rounded">5</i>
+              </div>
+            </li>
+            <li>Orange</li>
+            <li>Banana</li>
+            <li>Cherry</li>
+            <li>Grape</li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>超链接列表</h5>
+          <ul data-role="listview">
+            <li>
+              <a href="##">
+                <div><div>Apple</div><div>Apple</div></div>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-primary badge-rounded">5</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">
+                <p>Orange</p>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-dark badge-rounded">14</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">Banana</a>
+            </li>
+            <li>
+              <a href="##">Cherry</a>
+            </li>
+            <li>
+              <a href="##">Grape</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>嵌入式列表</h5>
+          <ul data-role="listview" data-inset="true">
+            <li>
+              <a href="##">
+                <div>Apple</div>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-success badge-rounded">12+</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">Orange</a>
+            </li>
+            <li>
+              <a href="##">Banana</a>
+            </li>
+            <li>
+              <a href="##">Cherry</a>
+            </li>
+            <li>
+              <a href="##">Grape</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>带搜索框的列表</h5>
+          <ul data-role="listview" data-inset="true" data-filter="true">
+            <li>
+              <a href="##">
+                <div>Apple</div>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-success badge-rounded">12+</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">Orange</a>
+            </li>
+            <li>
+              <a href="##">Banana</a>
+            </li>
+            <li>
+              <a href="##">Cherry</a>
+            </li>
+            <li>
+              <a href="##">Grape</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>带分隔栏的列表</h5>
+          <ul data-role="listview" data-inset="true" data-filter="false">
+            <li data-role="list-divider">I like</li>
+            <li>
+              <a href="##">
+                <div>Apple</div>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-success badge-rounded">12+</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">Orange</a>
+            </li>
+            <li data-role="list-divider">I don't like</li>
+            <li>
+              <a href="##">Banana</a>
+            </li>
+            <li>
+              <a href="##">Cherry</a>
+            </li>
+            <li>
+              <a href="##">Grape</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>带图片的列表</h5>
+          <ul data-role="listview" data-inset="true">
+            <li>
+              <a href="##">
+                <img src="../images/apple.jpg">
+                <h3>Apple</h3>
+                <p>味道很正的水果哦</p>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-success badge-rounded">12+</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">
+                <img src="../images/orange.jpg">
+                <h3>Orange</h3>
+                <p>橙子</p>
+              </a>
+            </li>
+            <li>
+              <a href="##">
+                <img src="../images/banana.jpg">
+                <h3>香蕉</h3>
+                <p>品种多样</p>
+                <p>不适合空腹食用</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>丰富信息列表</h5>
+          <ul data-role="listview" data-inset="true" data-filter="false">
+            <li>
+              <a href="##">
+                <h3>Apple</h3>
+                <p>水果之王，一种营养价值很高的水果</p>
+                <p>建议平时多食用该水果</p>
+                <p>建议空腹食用</p>
+                <div class="ui-lv-item-right">
+                  <i class="badge badge-success badge-rounded">12+</i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="##">
+                <h3>Orange</h3>
+                <p>橙子</p>
+                <p>味道很正</p>
+              </a>
+            </li>
+            <li>
+              <a href="##">
+                <h3>Banana</h3>
+                <p>热带地区水果</p>
+                <p>不建议空腹食用</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
