@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Desktop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.update.css">
+	<link rel="stylesheet" href="css/jqm-ui-demos.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+
+	<style>
+		.ui-page-theme-a{
+			background-image: url('images/desktop.jpg');
+			-webkit-background-size:  100% auto;
+			background-size: 100% auto;
+		}
+		.app::before{
+			content: '';
+			display: block;
+			width: 42px;
+			height: 42px;
+			border-radius: 10px;
+			background-color: #fff;
+			-webkit-background-size: 100% auto;
+			background-size: 100% auto;
+			box-sizing: border-box;
+		}
+		.app{
+			color: #fff!important;
+			font-weight: 500;
+			font-size: 12px;
+			text-decoration: none;
+			text-align: center;
+		}
+		.ui::before{
+			background-image: url("images/cat.png");
+		}
+		.usage::before{
+			background-image: url("images/book.png");
+		}
+	</style>
+</head>
+<body>
+
+	<div data-role="page">
+		<div role="main" class="ui-content">
+
+			<div class="ui-grid-d">
+				<div class="ui-block-a">
+					<a data-ajax="false" href="menus.html" class="app ui">jqm UI</a>
+				</div>
+				<div class="ui-block-b">
+					<a data-ajax="false" href="menus.html" class="app usage">使用说明</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+</body>
+</html>

@@ -2,26 +2,69 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.update.css">
     <link rel="stylesheet" href="css/jqm-ui-demos.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <style type="text/css">
+      .ui-page-theme-a{
+        background-image: url("images/bg4.jpg");
+      }
+      .banner{
+        font-family: Consolas;
+        font-size: 3.5em;
+        color: #efefef;
+        letter-spacing: .2em;
+        position: absolute;
+        left: 10%;
+        top: 20px;
+      }
+    </style>
   </head>
   <body>
 
     <div data-role="page">
       <div role="main">
+        <div class="banner">
+          <h1>jqm UI</h1>
+        </div>
         <div class="phone">
           <div class="phone-content">
-            <div class="header"></div>
-            <iframe src="menus.html" style="border: 0;height: 100%;width: 100%;"></iframe>
-            <div class="footer"></div>
+            <div class="header">
+              <div class="camera"></div>
+              <div class="speaker"></div>
+            </div>
+            <div class="phone-nav"></div>
+            <iframe class="embed" src="desktop.html"></iframe>
+            <a id="home-btn" href="javascript:;" class="footer"></a>
           </div>
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      var $home = $('#home-btn');
+      var cnt = 0;
+      $(function(){
+        $home.on('click', function(){
+            $(this).siblings('iframe').attr('src', 'desktop.html');
+        });
+        setTimeout(function(){ blingbling(true); }, 1000);
+      });
+
+      function blingbling(f){
+        $home.animate({
+            opacity: f ? 0 : 1
+        }, 500, function(){
+            if(cnt < 5){
+                blingbling(!f, cnt++);
+            }
+        });
+      }
+
+    </script>
 
   </body>
 </html>
