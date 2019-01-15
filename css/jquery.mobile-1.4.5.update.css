@@ -375,7 +375,7 @@ p{
   overflow: hidden;
   justify-content: flex-start;
   align-items: center;
-  padding: .5em 1em;
+  padding: .2em 1em;
 }
 .ui-form .ui-form-item .ui-form-item-content{
   -webkit-box-flex: 1;
@@ -400,6 +400,7 @@ p{
   border: none;
   outline: 0;
   width: 100%;
+  background-color: inherit;
 }
 
 .ui-form input[type="text"],
@@ -410,7 +411,8 @@ p{
 .ui-form input[type="tel"],
 .ui-form input[type="url"],
 .ui-form input[type="date"],
-.ui-form input[type="time"]{
+.ui-form input[type="time"],
+.ui-form select{
   height: 3em;
 }
 .ui-form label{

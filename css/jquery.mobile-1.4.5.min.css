@@ -4832,12 +4832,4 @@ html head + body .ui-body-a.ui-focus {
 	
 }
 
-/* Collapsible */
-.ui-page-theme-a .ui-collapsible .ui-collapsible-heading-toggle.ui-icon-carat-r:after{
-	/*background-color: transparent;*/
-}
-.ui-page-theme-a .ui-collapsible .ui-collapsible-heading-toggle.ui-icon-carat-d{
-	
-}
-
-/* Form */
+/* Popup */
