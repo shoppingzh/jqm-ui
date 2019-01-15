@@ -4833,3 +4833,7 @@ html head + body .ui-body-a.ui-focus {
 }
 
 /* Popup */
+.ui-popup{
+	border-color: transparent!important;
+	border-radius: .35em;
+}
