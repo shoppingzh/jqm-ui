@@ -4731,8 +4731,13 @@ button,
 	line-height: 1.3;
 	font-family: Microsoft Yahei;
 }
-.ui-shadow{
-	box-shadow: none;
+.ui-shadow,
+.ui-focus,
+.ui-shadow-inset{
+	box-shadow: none!important; /* 取消页面中所有元素的阴影效果 */
+}
+.ui-btn-active{
+	text-shadow: none!important; /* 强制取消所有激活按钮的文本阴影 */
 }
 .ui-corner-all{
 	border-radius: .5em;
@@ -4747,6 +4752,21 @@ button,
 	text-shadow: none;
 	border-color: #eee;
 }
+.ui-page-theme-a .ui-btn:focus,
+html .ui-bar-a .ui-btn:focus,
+html .ui-body-a .ui-btn:focus,
+html body .ui-group-theme-a .ui-btn:focus,
+html head + body .ui-btn.ui-btn-a:focus,
+.ui-page-theme-a .ui-focus,
+html .ui-bar-a .ui-focus,
+html .ui-body-a .ui-focus,
+html body .ui-group-theme-a .ui-focus,
+html head + body .ui-btn-a.ui-focus,
+html head + body .ui-body-a.ui-focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
 
 /* Buttons */
 .ui-btn{
@@ -4758,21 +4778,14 @@ button,
 	text-shadow: none;
 	border-color: #ccc;
 }
-.ui-page-theme-a .ui-btn:hover{
+.ui-page-theme-a .ui-btn:hover,
+.ui-page-theme-a .ui-btn:active,
+.ui-page-theme-a .ui-btn:focus,
+.ui-page-theme-a .ui-btn:visited{ /* 按钮各种状态下的阴影去除 */
 	background-color: #fff;
 	text-shadow: none;
-}
-
-.ui-page-theme-a .ui-btn:active{
-	background-color: #fff;	/* 去除按钮激活状态下的背景 */
-}
-.ui-page-theme-a .ui-btn:focus{
-	-webkit-box-shadow: none; /* 去除按钮聚焦状态下的阴影 */
-	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
 	box-shadow: none;
-}
-.ui-page-theme-a .ui-btn:visited{
-	background-color: #fff;
 }
 
 /* Listview */
@@ -4810,6 +4823,7 @@ button,
 	border-color: #ddd;
 	/*border-radius: 2em;*/
 	font-weight: 500;
+	box-shadow: none;
 }
 .ui-page-theme-a .ui-flipswitch-active{
 	background-color: #0e90d2;
@@ -4817,3 +4831,13 @@ button,
 .ui-page-theme-a .ui-flipswitch .ui-flipswitch-on{
 	
 }
+
+/* Collapsible */
+.ui-page-theme-a .ui-collapsible .ui-collapsible-heading-toggle.ui-icon-carat-r:after{
+	/*background-color: transparent;*/
+}
+.ui-page-theme-a .ui-collapsible .ui-collapsible-heading-toggle.ui-icon-carat-d{
+	
+}
+
+/* Form */

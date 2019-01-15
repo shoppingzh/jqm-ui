@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        <a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
+        <h3>Form</h3>
+      </div>
+      <div role="main" class="ui-content">
+
+        <div class="demo">
+          <h5>原始表单</h5>
+          <ul data-role="listview" data-inset="false">
+            <li>
+              <input type="text" data-role="none">
+            </li>
+            <li>
+              <select data-role="none">
+                <option>Apple</option>
+                <option>Orange</option>
+                <option>Banana</option>
+              </select>
+            </li>
+            <li>
+              <input type="radio" name="f1" data-role="none">A
+              <input type="radio" name="f1" data-role="none">B
+            </li>
+            <li>
+              <input type="checkbox" data-role="none">A
+              <input type="checkbox" data-role="none">B
+              <input type="checkbox" data-role="none">C
+            </li>
+            <li>
+              <textarea data-role="none"></textarea>
+            </li>
+            <li>
+              <button data-role="none">提交</button>
+              <button data-role="none">取消</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>jQuery mobile表单</h5>
+          <ul data-role="listview" data-inset="false">
+            <li>
+              <input type="text">
+            </li>
+            <li>
+              <select>
+                <option>Apple</option>
+                <option>Orange</option>
+                <option>Banana</option>
+              </select>
+            </li>
+            <li>
+              <label><input name="f2" type="radio">A</label>
+              <label><input name="f2" type="radio">B</label>
+            </li>
+            <li>
+              <label><input type="checkbox">A</label>
+              <label><input type="checkbox">B</label>
+              <label><input type="checkbox">C</label>
+            </li>
+            <li>
+              <textarea></textarea>
+            </li>
+            <li>
+              <button class="ui-btn ui-btn-sm ui-btn-inline ui-btn-primary ui-corner-all">提交</button>
+              <button class="ui-btn ui-btn-sm ui-btn-inline ui-corner-all">取消</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="demo">
+          <h5>jqm UI 表单</h5>
+          <ul data-role="listview" class="ui-form">
+            <li class="ui-form-item">
+              <label>姓名</label>
+              <div class="ui-form-item-content">
+                <input type="text" data-role="none" placeholder="输入姓名">
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>出生年月</label>
+              <div class="ui-form-item-content">
+                <input type="date" data-role="none" placeholder="输入出生年月">
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>爱好</label>
+              <div class="ui-form-item-content">
+                <textarea rows="3" data-role="none"></textarea>
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>水果</label>
+              <select data-role="none">
+                <option>Apple</option>
+                <option>Orange</option>
+                <option>Banana</option>
+              </select>
+            </li>
+            <li class="ui-form-item">
+              <label>选择</label>
+              <div class="ui-form-item-content">
+                <label><input type="radio" name="f3">A</label>
+                <label><input type="radio" name="f3">B</label>
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>复选框</label>
+              <input type="checkbox" data-role="none">A
+              <input type="checkbox" data-role="none">B
+              <input type="checkbox" data-role="none">C
+            </li>
+            <li class="cake">
+              <button class="c6 ui-btn ui-btn-sm ui-btn-primary">提交</button>
+              <button class="c6 ui-btn ui-btn-sm">取消</button>
+            </li>
+          </ul>
+        </div>
+
+        
+      
+      </div>
+    </div>
+
+  </body>
+</html>

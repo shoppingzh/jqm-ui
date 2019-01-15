@@ -4746,6 +4746,21 @@ button,
 	text-shadow: none;
 	border-color: #eee;
 }
+.ui-page-theme-a .ui-btn:focus,
+html .ui-bar-a .ui-btn:focus,
+html .ui-body-a .ui-btn:focus,
+html body .ui-group-theme-a .ui-btn:focus,
+html head + body .ui-btn.ui-btn-a:focus,
+.ui-page-theme-a .ui-focus,
+html .ui-bar-a .ui-focus,
+html .ui-body-a .ui-focus,
+html body .ui-group-theme-a .ui-focus,
+html head + body .ui-btn-a.ui-focus,
+html head + body .ui-body-a.ui-focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
 
 /* Buttons */
 .ui-btn{
@@ -4775,10 +4790,57 @@ button,
 }
 
 /* Listview */
+.ui-listview>li .ui-lv-item-right{
+	position: absolute;
+	top: 50%;
+	right: 1.58em;
+	margin-top: -11px; /* 为什么没有用1em? 与右侧箭头高度保持一致 */
+}
+.ui-listview>.ui-li-divider{
+	font-weight: 600;
+}
+.ui-page-theme-a .ui-listview>.ui-li-divider{
+	background-color: #fafafa;
+	/*text-shadow: none;*/ /* 暂不去除分割行的文本阴影 */
+	color: #444;
+}
 .ui-page-theme-a .ui-listview .ui-btn{
 	border-color: #eee;
 }
 .ui-page-theme-a .ui-listview>li>.ui-icon-carat-r:after{
 	background-color: transparent;
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23111%3B%22%20points%3D%227%2C2%2014%2C7%207%2C12%206%2E5%2C12%2013%2E5%2C7%207%202%2E5%20%22%2F%3E%3C%2Fsvg%3E");
+}
+
+/* Control group */
+.ui-controlgroup.ui-corner-all{
+	border-radius: .3em;
+}
+
+/* Flip switch */
+.ui-page-theme-a .ui-flipswitch{
+	background-color: #fff;
+	text-shadow: none;
+	border-color: #ddd;
+	/*border-radius: 2em;*/
+	font-weight: 500;
+	box-shadow: none;
+}
+.ui-page-theme-a .ui-flipswitch-active{
+	background-color: #0e90d2;
+}
+.ui-page-theme-a .ui-flipswitch .ui-flipswitch-on{
+	
+}
+
+/* Collapsible */
+.ui-page-theme-a .ui-collapsible .ui-collapsible-heading-toggle.ui-icon-carat-r:after{
+	/*background-color: transparent;*/
+}
+.ui-page-theme-a .ui-collapsible .ui-collapsible-heading-toggle.ui-icon-carat-d{
+	
+}
+
+.ui-focus{
+	box-shadow: none!important;
 }

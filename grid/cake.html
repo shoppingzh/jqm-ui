@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <style type="text/css">
+      .cake{
+        /*margin-bottom: 5px;*/
+      }
+      .cake .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12{
+        background-color: lightblue;
+        border: 1px dashed #38c;
+        line-height: 2!important;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+        <a data-ajax="false" href="index.html" class="ui-btn ui-corner-all">返回</a>
+        <h3>Cake</h3>
+      </div>
+      <div role="main" class="ui-content">
+
+        <div class="demo">
+          <h5>均分</h5>
+          <div class="cake">
+            <div class="c2">Part 1</div>
+            <div class="c2">Part 2</div>
+            <div class="c2">Part 3</div>
+            <div class="c2">Part 4</div>
+            <div class="c2">Part 5</div>
+            <div class="c2">Part 6</div>
+          </div>
+        </div>
+
+        <div class="demo">
+          <h5>非均分方式</h5>
+          <div class="cake">
+            <div class="c8">Part 1</div>
+            <div class="c4">Part 2</div>
+          </div>
+          <div class="cake">
+            <div class="c10">Part 1</div>
+            <div class="c2">Part 2</div>
+          </div>
+          <div class="cake">
+            <div class="c3">Part 1</div>
+            <div class="c9">Part 2</div>
+          </div>
+        </div>
+
+        <div class="demo">
+          <h5>Cake套Cake</h5>
+          <div class="cake">
+            <div class="c8">
+              <div class="cake">
+                <div class="c8">Part 1-1</div>
+                <div class="c4">Part 1-2</div>
+              </div>
+            </div>
+            <div class="c4">Part 2</div>
+          </div>
+        </div>
+
+        <div class="demo">
+          <h5>Cake实现九宫格</h5>
+          <div class="cake">
+            <div class="c4">1</div>
+            <div class="c4">2</div>
+            <div class="c4">3</div>
+          </div>
+          <div class="cake">
+            <div class="c4">1</div>
+            <div class="c4">2</div>
+            <div class="c4">3</div>
+          </div>
+          <div class="cake">
+            <div class="c4">1</div>
+            <div class="c4">2</div>
+            <div class="c4">3</div>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+
+  </body>
+</html>

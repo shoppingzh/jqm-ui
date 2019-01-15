@@ -1,6 +1,18 @@
 .ui-page-theme-a{
 	background-color: #efeff4;
 }
+.ui-bar-b{
+	background-color: #38c;
+	border-color: #38c;
+}
+html .ui-bar-b .ui-btn{
+	background-color: transparent;!important;
+	text-shadow: none!important;
+	color: #eee!important;
+	border: none!important;
+	font-size: .85em;
+
+}
 ::-webkit-scrollbar{
 	width: 0;
 }
