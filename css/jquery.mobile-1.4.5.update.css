@@ -9,39 +9,51 @@ p{
 }
 /* Colors */
 .color-dark{
-  color: #111;
+  color: #111!important;
 }
 .color-lightdark{
-  color: #333;
+  color: #333!important;
 }
 .color-grey{
-  color: #666;
+  color: #666!important;
 }
 .color-lightgrey{
-  color: #9e9e9e;  
+  color: #9e9e9e!important;
 }
 .color-primary{
-  color: #3b94e7;
+  color: #3b94e7!important;
 }
 .color-info{
-  color: #3bb4f2;
+  color: #3bb4f2!important;
 }
 .color-success{
-  color: #5eb95e;
+  color: #5eb95e!important;
 }
 .color-warning{
-  color: #f37b1d;
+  color: #f37b1d!important;
 }
 .color-danger{
-  color: #dd514c;
+  color: #dd514c!important;
 }
 /* Corners */
 .ui-corner-lg{
-	border-radius: 1.5em;
+	border-radius: 1.5em!important;
 }
 .ui-btn.ui-corner-lg{
 	padding: .45em .8em;
 }
+/* Links */
+.link{
+  display: inline;
+  text-decoration: none;
+}
+.link,
+.link:hover,
+.link:visited{
+  font-weight: 500!important;
+  color: #0894ec!important;
+}
+
 /* Buttons */
 .ui-btn.ui-btn-primary{
   background-color: #3b94e7 !important;
@@ -272,7 +284,7 @@ p{
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: .35em;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   font-size: 14px;
   color: #333;
   overflow: hidden;
@@ -368,7 +380,8 @@ p{
   margin-bottom: 0;
 }
 
-/* Form 使用flex布局实现，flex布局学习请见：https://www.cnblogs.com/xuyuntao/articles/6391728.html */
+/* Form */
+/* 使用flex布局实现，flex布局学习请见：https://www.cnblogs.com/xuyuntao/articles/6391728.html */
 .ui-form .ui-form-item{
   display: flex!important;
   box-sizing: border-box;
@@ -376,6 +389,7 @@ p{
   justify-content: flex-start;
   align-items: center;
   padding: .2em 1em;
+  position: relative;
 }
 .ui-form .ui-form-item .ui-form-item-content{
   -webkit-box-flex: 1;
@@ -385,6 +399,7 @@ p{
   -ms-flex-shrink: 1;
   flex-shrink: 1;
   width: 100%;
+  padding-left: .2em; /* 保持一定间距，当label超长时不至于挤到一起 */
 }
 .ui-form input[type="text"],
 .ui-form input[type="password"],
@@ -395,6 +410,7 @@ p{
 .ui-form input[type="url"],
 .ui-form input[type="date"],
 .ui-form input[type="time"],
+.ui-form input[type="file"],
 .ui-form textarea,
 .ui-form select{
   border: none;
@@ -412,14 +428,118 @@ p{
 .ui-form input[type="url"],
 .ui-form input[type="date"],
 .ui-form input[type="time"],
+.ui-form input[type="file"],
 .ui-form select{
   height: 3em;
 }
 .ui-form label{
   display: block;
+  font-size: .85em;
   width: 35%;
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+/* Popup */
+.popup-inner{
+  background-color: #fefefe;
+  position: relative;
+  border-top: 4px solid transparent;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  min-width: 20em;
+}
+.popup-inner.popup-info{
+  border-color: #07b3f5;
+}
+.popup-inner.popup-warning{
+  border-color: #f37b1d;
+}
+.popup-inner.popup-danger{
+  border-color: #dd514c;
+}
+.popup-inner .popup-header{
+  text-align: center;
+}
+.popup-inner .popup-title{
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  padding: 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+}
+.popup-inner .popup-body{
+  font-size: 14px;
+  padding: 1.8em;
+}
+.popup-body p,
+.popup-body h1,
+.popup-body h2,
+.popup-body h3,
+.popup-body h4,
+.popup-body h5,
+.popup-body h6{
+  margin: 0;
+}
+.popup-inner .popup-buttons{
+  box-sizing: border-box;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around; /* 均匀分布按钮 */
+  align-items: center;
+  font-size: 16px;
+}
+.popup-buttons .popup-button{
+  display: inline-block;
+  height: 2.65em;
+  -webkit-box-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  padding: 0 .15em;
+  font-size: 1em;
+  cursor: pointer;
+  line-height: 2.5em;
+  position: relative;
+  color: #0894ec;
+}
+.popup-buttons .popup-button:not(:last-child):after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: #ccc;
+}
+/* Popup Support*/
+/* 弹出框的辅助类，帮助popup可在任意位置弹出 */
+.popup-support-top,
+.popup-support-bottom{
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  visibility: hidden;
+  left: 0;
+}
+.popup-support-top{
+   top: -1px;
+}
+.popup-support-bottom{
+  bottom: -1px;
 }

@@ -4821,19 +4821,22 @@ html head + body .ui-body-a.ui-focus {
 	background-color: #fff;
 	text-shadow: none;
 	border-color: #ddd;
-	/*border-radius: 2em;*/
 	font-weight: 500;
 	box-shadow: none;
 }
 .ui-page-theme-a .ui-flipswitch-active{
 	background-color: #0e90d2;
 }
-.ui-page-theme-a .ui-flipswitch .ui-flipswitch-on{
-	
-}
 
 /* Popup */
+/* 去除原有边框、减小边框圆角 */
 .ui-popup{
-	border-color: transparent!important;
+	border: none!important;
 	border-radius: .35em;
+	background-color: transparent;
+}
+/* Tabs */
+/*  */
+.ui-tabs{
+	padding: 0;
 }

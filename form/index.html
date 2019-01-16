@@ -18,68 +18,10 @@
       </div>
       <div role="main" class="ui-content">
 
-        <div class="demo">
-          <h5>原始表单</h5>
-          <ul data-role="listview" data-inset="false">
-            <li>
-              <input type="text" data-role="none">
-            </li>
-            <li>
-              <select data-role="none">
-                <option>Apple</option>
-                <option>Orange</option>
-                <option>Banana</option>
-              </select>
-            </li>
-            <li>
-              <input type="radio" name="f1" data-role="none">A
-              <input type="radio" name="f1" data-role="none">B
-            </li>
-            <li>
-              <input type="checkbox" data-role="none">A
-              <input type="checkbox" data-role="none">B
-              <input type="checkbox" data-role="none">C
-            </li>
-            <li>
-              <textarea data-role="none"></textarea>
-            </li>
-            <li>
-              <button data-role="none">提交</button>
-              <button data-role="none">取消</button>
-            </li>
-          </ul>
-        </div>
-
-        <div class="demo">
-          <h5>jQuery mobile表单</h5>
-          <ul data-role="listview" data-inset="false">
-            <li>
-              <input type="text">
-            </li>
-            <li>
-              <select>
-                <option>Apple</option>
-                <option>Orange</option>
-                <option>Banana</option>
-              </select>
-            </li>
-            <li>
-              <label><input name="f2" type="radio">A</label>
-              <label><input name="f2" type="radio">B</label>
-            </li>
-            <li>
-              <label><input type="checkbox">A</label>
-              <label><input type="checkbox">B</label>
-              <label><input type="checkbox">C</label>
-            </li>
-            <li>
-              <textarea></textarea>
-            </li>
-            <li>
-              <button class="ui-btn ui-btn-sm ui-btn-inline ui-btn-primary ui-corner-all">提交</button>
-              <button class="ui-btn ui-btn-sm ui-btn-inline ui-corner-all">取消</button>
-            </li>
-          </ul>
+        <div class="card">
+          <div class="card-content">
+            <p>点击 <a data-ajax="false" href="validation.html" class="link">此处</a> 查看一个表单校验的例子</p>
+          </div>
         </div>
 
         <div class="demo">
@@ -92,37 +34,68 @@
               </div>
             </li>
             <li class="ui-form-item">
+              <label>身份证号码</label>
+              <div class="ui-form-item-content">
+                <input type="password" data-role="none" placeholder="输入身份证号码">
+              </div>
+            </li>
+            <li class="ui-form-item">
               <label>出生年月</label>
               <div class="ui-form-item-content">
                 <input type="date" data-role="none" placeholder="输入出生年月">
               </div>
             </li>
             <li class="ui-form-item">
+              <label>性别</label>
+              <div class="ui-form-item-content">
+                <input type="radio" data-role="flipswitch" data-on-text="男" data-off-text="女" checked>
+              </div>
+            </li>
+            <li class="ui-form-item">
               <label>爱好</label>
               <div class="ui-form-item-content">
-                <textarea rows="3" data-role="none"></textarea>
+                <textarea rows="3" data-role="none" placeholder="例如：打球，看书等"></textarea>
               </div>
             </li>
             <li class="ui-form-item">
               <label>水果</label>
-              <select data-role="none">
-                <option>Apple</option>
-                <option>Orange</option>
-                <option>Banana</option>
-              </select>
-            </li>
-            <li class="ui-form-item">
-              <label>选择</label>
               <div class="ui-form-item-content">
-                <label><input type="radio" name="f3">A</label>
-                <label><input type="radio" name="f3">B</label>
+                <select data-role="none">
+                  <option>Apple</option>
+                  <option>Orange</option>
+                  <option>Banana</option>
+                </select>
               </div>
             </li>
             <li class="ui-form-item">
-              <label>复选框</label>
-              <input type="checkbox" data-role="none">A
-              <input type="checkbox" data-role="none">B
-              <input type="checkbox" data-role="none">C
+              <label>手机号码</label>
+              <div class="ui-form-item-content">
+                <input type="tel" placeholder="如：13470065847" data-role="none">
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>邮箱</label>
+              <div class="ui-form-item-content">
+                <input type="email" placeholder="输入邮箱" data-role="none">
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>年龄</label>
+              <div class="ui-form-item-content">
+                <input type="number" placeholder="输入年龄" data-role="none">
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>证明文件</label>
+              <div class="ui-form-item-content">
+                <input type="file" placeholder="选择文件" data-role="none">
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>国籍</label>
+              <div class="ui-form-item-content">
+                <input type="search" placeholder="输入国籍" data-role="none">
+              </div>
             </li>
             <li class="cake">
               <button class="c6 ui-btn ui-btn-sm ui-btn-primary">提交</button>
@@ -131,7 +104,73 @@
           </ul>
         </div>
 
-        
+        <div id="other" style="display: none;">
+          <div class="demo">
+            <h5>原始表单</h5>
+            <ul data-role="listview" data-inset="false">
+              <li>
+                <input type="text" data-role="none">
+              </li>
+              <li>
+                <select data-role="none">
+                  <option>Apple</option>
+                  <option>Orange</option>
+                  <option>Banana</option>
+                </select>
+              </li>
+              <li>
+                <input type="radio" name="f1" data-role="none">A
+                <input type="radio" name="f1" data-role="none">B
+              </li>
+              <li>
+                <input type="checkbox" data-role="none">A
+                <input type="checkbox" data-role="none">B
+                <input type="checkbox" data-role="none">C
+              </li>
+              <li>
+                <textarea data-role="none"></textarea>
+              </li>
+              <li>
+                <button data-role="none">提交</button>
+                <button data-role="none">取消</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="demo">
+            <h5>jQuery mobile表单</h5>
+            <ul data-role="listview" data-inset="false">
+              <li>
+                <input type="text">
+              </li>
+              <li>
+                <select>
+                  <option>Apple</option>
+                  <option>Orange</option>
+                  <option>Banana</option>
+                </select>
+              </li>
+              <li>
+                <label><input name="f2" type="radio">A</label>
+                <label><input name="f2" type="radio">B</label>
+              </li>
+              <li>
+                <label><input type="checkbox">A</label>
+                <label><input type="checkbox">B</label>
+                <label><input type="checkbox">C</label>
+              </li>
+              <li>
+                <textarea></textarea>
+              </li>
+              <li>
+                <button class="ui-btn ui-btn-sm ui-btn-inline ui-btn-primary ui-corner-all">提交</button>
+                <button class="ui-btn ui-btn-sm ui-btn-inline ui-corner-all">取消</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <a href="javascript:;" class="link" onclick="javascript: $('#other').toggle();">查看原始表单和jQuery mobile表单</a>
       
       </div>
     </div>
