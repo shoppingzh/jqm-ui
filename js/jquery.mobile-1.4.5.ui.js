@@ -1,5 +1,13 @@
 (function($){
 
+	$.openPop = function(){
+		
+	}
+
+})(jQuery);
+
+(function($){
+
 	$(function(){
 		$('body').append('<div class="popup-support-top">')
 			.append('<div class="popup-support-bottom">');
@@ -8,7 +16,7 @@
 	var defaults = {
 		overlay: true,
 		corners: false,
-		dismissible: false
+		dismissible: true
 	};
 
 	var methods = {
@@ -29,7 +37,7 @@
 				.end()
 				.popup('open')
 				.on('popupafterclose', function(){
-					// $(this).popup('destroy').remove();
+					
 				});
 			return this;
 		},
