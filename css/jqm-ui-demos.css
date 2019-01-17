@@ -11,10 +11,20 @@ html .ui-bar-b .ui-btn{
 	color: #eee!important;
 	border: none!important;
 	font-size: .85em;
-
 }
 ::-webkit-scrollbar{
 	width: 0;
+}
+#phone{
+	display: none;
+}
+@media (max-width: 600px) {
+	#pc{
+		display: none;
+	}
+	#phone{
+		display: block;
+	}
 }
 .demo{
 	margin-bottom: 35px;
@@ -29,7 +39,7 @@ html .ui-bar-b .ui-btn{
 	width: 364px;
 	height: 764px;
 	position: absolute;
-	right: 150px;
+	right: 36px;
 	top: 30px;
 }
 /*.phone .phone-nav{

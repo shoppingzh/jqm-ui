@@ -26,21 +26,31 @@
   <body>
 
     <div data-role="page">
-      <div role="main">
-        <div class="banner">
-          <h1>jqm UI</h1>
+      <div role="main" style="min-height: inherit;">
+
+        <div id="phone" style="width: 100%;min-height: inherit;">
+          <iframe class="embed" src="menus.html" style="width: 100%;min-height: inherit; border: none!important;"></iframe>
         </div>
-        <div class="phone">
-          <div class="phone-content">
-            <div class="header">
-              <div class="camera"></div>
-              <div class="speaker"></div>
+
+        <div id="pc">
+          <div class="banner">
+            <h1>jqm UI</h1>
+          </div>
+          <div class="phone">
+            <div class="phone-content">
+              <div class="header">
+                <div class="camera"></div>
+                <div class="speaker"></div>
+              </div>
+              <div class="phone-nav"></div>
+              <iframe class="embed" src="desktop.html"></iframe>
+              <a id="home-btn" href="javascript:;" class="footer"></a>
             </div>
-            <div class="phone-nav"></div>
-            <iframe class="embed" src="desktop.html"></iframe>
-            <a id="home-btn" href="javascript:;" class="footer"></a>
           </div>
         </div>
+
+
+
       </div>
     </div>
 

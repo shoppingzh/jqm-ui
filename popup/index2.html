@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+	<link rel="stylesheet" href="../css/jqm-ui-demos.css">
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.ui.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a" class="ui-noboxshadow">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
+		<a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
+		<h3>Popup</h3>
+	</div>
+	<div role="main" class="ui-content">
+
+		<div class="demo">
+			<h5>提示框</h5>
+			<a href="javascript:;" class="link" onclick="alert1();">普通提示框</a>
+		</div>
+
+		<!--<div id="aaa" class="popup-inner popup-warning">
+			<div class="popup-header">
+				<h3 class="popup-title">提示信息</h3>
+			</div>
+			<div class="popup-body">
+				<p>确定要删除该记录？</p>
+			</div>
+			<div class="popup-buttons">
+				<span class="popup-button">取消</span>
+				<span class="popup-button color-warning">确认</span>
+			</div>
+		</div>-->
+
+	</div>
+</div>
+<script type="text/javascript">
+
+	function alert1(){
+	    $.alert('提示', '输入有误！', function(){
+	        alert(1)
+	    })
+	}
+
+</script>
+</body>
+</html>
