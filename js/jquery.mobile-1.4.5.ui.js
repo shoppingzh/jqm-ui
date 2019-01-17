@@ -1,8 +1,16 @@
 (function($){
 
-	$.openPop = function(){
+	$.toast = function(){
+
+	},
+
+	$.alert = function(){
+
+	},
+
+	$.openModal = function(opts){
 		
-	}
+	},
 
 })(jQuery);
 
