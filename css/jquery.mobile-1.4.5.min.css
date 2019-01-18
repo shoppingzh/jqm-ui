@@ -4838,6 +4838,9 @@ html head + body .ui-body-a.ui-focus {
 	background-color: #fff!important; 
 	border: none!important;
 }
+.ui-popup-screen{
+	position: fixed!important;
+}
 /* Tabs */
 /*  */
 .ui-tabs{

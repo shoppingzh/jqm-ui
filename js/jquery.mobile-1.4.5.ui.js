@@ -141,7 +141,7 @@
 			dismissible: true,
 			position: options.position,
 			fullWidth: false,
-			transition: 'pop',
+			transition: 'none',
 			arrow: 'b,t'
 		});
 	};
