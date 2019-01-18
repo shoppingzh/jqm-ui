@@ -185,6 +185,7 @@
         // Events
         $popup.on({
             'popupcreate': function(e, ui){
+            	lockScreen();
 				if(func(opts.onCreate)){ opts.onCreate($popup); }
             },
             'popupafteropen': function(){
@@ -194,6 +195,7 @@
                 if(func(opts.beforePosition)){ opts.beforePosition($popup); }
             },
             'popupafterclose': function(){
+            	unlockScreen();
             	$.activePop = undefined;
                 $.destroyPopup($popup);
                 if (func(opts.afterclose)) { opts.afterclose($popup); }
@@ -239,6 +241,14 @@
 	$.destroyPopup = function(popup){
 		return $(popup).popup('destroy');
 	};
+
+	function lockScreen(){
+		$('body').css('overflowY', 'hidden');
+	}
+
+	function unlockScreen(){
+		$('body').css('overflowY', 'auto');
+	}
 
 	function func(f){
 		return f !== undefined && $.isFunction(f);
