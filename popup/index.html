@@ -16,203 +16,140 @@
       <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
         <a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
         <h3>Popup</h3>
+        <a data-ajax="false" href="javascript:;" class="ui-btn floatMenu">菜单</a>
       </div>
       <div role="main" class="ui-content">
 
         <div class="demo">
-          <h5>提示框</h5>
-          <a class="link" href="#alert1" data-rel="popup" data-transition="pop" data-position-to="window">普通提示框</a>
-          <div id="alert1" data-role="popup" data-overlay-theme="b">
-            <div class="popup-inner">
-              <div class="popup-body">
-                <p>您输入的内容有误，请重新输入！</p>
-              </div>
-              <div class="popup-buttons">
-                <span class="popup-button">确认</span>
-              </div>
-            </div>
-          </div><!--  /.popup -->
+          <h5>警示框</h5>
+          <a href="javascript:;" class="link" onclick="alert1();">普通警示框</a>
           <br><br>
-
-          <a class="link" href="#alert2" data-rel="popup" data-transition="pop" data-position-to="window">带标题的提示框</a>
-          <div id="alert2" data-role="popup" data-overlay-theme="b">
-            <div class="popup-inner">
-              <div class="popup-header">
-                <h3 class="popup-title">警告</h3>
-              </div>
-              <div class="popup-body">
-                <p>您输入的内容有误，请重新输入！</p>
-              </div>
-              <div class="popup-buttons">
-                <span class="popup-button">确认</span>
-              </div>
-            </div>
-          </div><!--  /.popup -->
-          <br><br>
-
-          <a class="link" href="#alert3" data-rel="popup" data-transition="pop" data-position-to="window">带效果的提示框(通用提示)</a>
-          <div id="alert3" data-role="popup" data-overlay-theme="b">
-            <div class="popup-inner popup-info">
-              <div class="popup-header">
-                <h3 class="popup-title">警告</h3>
-              </div>
-              <div class="popup-body">
-                <p>您输入的内容有误，请重新输入！</p>
-              </div>
-              <div class="popup-buttons">
-                <span class="popup-button">确认</span>
-              </div>
-            </div>
-          </div><!--  /.popup -->
-          <br><br>
-          
-          <a class="link" href="#alert4" data-rel="popup" data-transition="pop" data-position-to="window">带效果的提示框(重度提示)</a>
-          <div id="alert4" data-role="popup" data-overlay-theme="b">
-            <div class="popup-inner popup-danger">
-              <div class="popup-header">
-                <h3 class="popup-title">警告</h3>
-              </div>
-              <div class="popup-body">
-                <p>您输入的内容有误，请重新输入！</p>
-              </div>
-              <div class="popup-buttons">
-                <span class="popup-button">确认</span>
-              </div>
-            </div>
-          </div><!--  /.popup -->
-          <br><br>
+          <a href="javascript:;" class="link" onclick="alert2();">带回调警示框</a>
         </div>
 
         <div class="demo">
           <h5>确认提示框</h5>
-          <a class="link" href="#confirm1" data-rel="popup" data-transition="pop" data-position-to="window">普通确认提示框</a>
-          <div id="confirm1" data-role="popup" data-overlay-theme="b">
-            <div class="popup-inner">
-              <div class="popup-header">
-                <h3 class="popup-title">提示信息</h3>
-              </div>
-              <div class="popup-body">
-                <p>确定要删除该记录？</p>
-              </div>
-              <div class="popup-buttons">
-                <span class="popup-button">取消</span>
-                <span class="popup-button">确认</span>
-              </div>
-            </div>
-          </div><!-- /.popup -->
+          <a href="javascript:;" class="link" onclick="confirm1();">普通确认提示框</a>
           <br><br>
-
-          <a class="link" href="#confirm2" data-rel="popup" data-transition="pop" data-position-to="window">带效果的确认提示框</a>
-          <div id="confirm2" data-role="popup" data-overlay-theme="b">
-            <div class="popup-inner popup-warning">
-              <div class="popup-header">
-                <h3 class="popup-title">提示信息</h3>
-              </div>
-              <div class="popup-body">
-                <p>确定要删除该记录？</p>
-              </div>
-              <div class="popup-buttons">
-                <span class="popup-button">取消</span>
-                <span class="popup-button color-warning">确认</span>
-              </div>
-            </div>
-          </div><!-- /.popup -->
+          <a href="javascript:;" class="link" onclick="confirm2();">带回调确认提示框</a>
+          <br><br>
+          <a href="javascript:;" class="link" onclick="confirm3();">带标题确认提示框</a>
         </div>
 
+        <div class="demo">
+          <h5>加载框</h5>
+          <a href="javascript:;" class="link" onclick="loading1();">普通加载框</a>
+        </div>
+
+        <div class="demo">
+          <h5>操作项</h5>
+          <a href="javascript:;" class="link" onclick="actions1()">打开操作项</a>
+        </div>
+
+        <div class="demo">
+          <h5>浮动菜单</h5>
+          <a href="javascript:;" class="link floatMenu">点击打开浮动菜单</a>
+        </div>
+
+        <div>
+          <h5>选择</h5>
+          <ul data-role="listview" class="chooser">
+            <li>香蕉</li>
+            <li>菠萝</li>
+            <li>哈密瓜</li>
+            <li>萨瓦迪卡</li>
+            <li>阔你气哇</li>
+          </ul>
+        </div>
+      
         <div class="demo">
           <h5>选择器</h5>
-          <a class="link" href="javascript:;" onclick="picker('用户名或密码错误，请重试！');" >从下方出来的选择器</a>
-
-          <!-- <div id="bottom" style="display: block;width: 100%;max-height: 1px;height: 1px;position: absolute;bottom: -1px;left: 0;">
-          </div> -->
+          <ul data-role="listview" class="ui-form">
+            <li class="ui-form-item">
+              <label>性别</label>
+              <div class="ui-form-item-content">
+                <select data-role="none" class="">
+                  <option>男</option>
+                  <option>女</option>
+                  <option>未知</option>
+                </select>
+              </div>
+            </li>
+            <li class="ui-form-item">
+              <label>喜欢的水果</label>
+              <div class="ui-form-item-content">
+                <select data-role="none" class="mutiple">
+                  <option>苹果</option>
+                  <option>香蕉</option>
+                  <option>橙子</option>
+                  <option>葡萄</option>
+                </select>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <div class="demo">
-          <h5>插件化</h5>
-          <a href="javascript:;" class="link" onclick="javascript: $('#bird').flyup();">从下方弹出</a>
-          <br><br>
-          <a href="javascript:;" class="link" onclick="javascript: $('#noti').flydown();">从上方弹出</a>
-          <div id="bird" class="popup-inner" style="display: none;">
-            <div class="popup-header">
-              <h3 class="popup-title">提示信息</h3>
-            </div>
-            <div class="popup-body" style="padding: 0;">
-              <ul data-role="listview">
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-                <li><a href="javascript">我是隔壁的泰山</a></li>
-              </ul>
-            </div>
-            <div class="popup-buttons">
-              <span class="popup-button">确认</span>
-            </div>
-          </div>
 
-          <div id="noti" class="popup-inner" style="display: none; ">
-            <div class="popup-body" style="padding: 5px 15px;"> 
-              <p>提示：您有一条新消息!</p>
-              <p>点击此处可查看</p> 
-            </div>
-            <div class="popup-buttons"><span class="popup-button">关闭</span></div>
-          </div>
-        </div>
 
       </div>
     </div>
     <script type="text/javascript">
-      $(document).on({
-        create: function(){
-          $(this).on({
-            click: function(){
-              $(this).parents('.ui-popup').popup('close');
-            }
-          }, '.popup-button');
-        }
-      }, '[data-role=page]');
-      
 
-      function picker(msg){
-        var $popup = $('<div data-role="popup">')
-          .append(
-            $('<div class="popup-inner">')
-              .append($('<div class="popup-body">').append(
-                  $('<ul data-role="listview" data-inset="false">').append('<li>买入</li>').append('<li>卖出</li>')
-                  .listview()
-                ))
-              .append($('<div class="popup-buttons">').append('<span class="popup-button">确认</span>'))
-          )
-          .appendTo($.mobile.activePage)
-          .popup({
-            overlayTheme: 'b',
-            positionTo: '.popup-support-bottom',
-            dismissible: false,
-            transition: 'slideup',
-            corners: false,
-            classes: {
-              'ui-popup': 'highlight'
-            },
-            tolerance: '0,0,0,0'
-          })
-          .parent().css('left', '0').css('right', '0')
-          .end()
-          .popup('open', {
-            x: 120,
-            y: 120
-          })
-          .on('popupafterclose', function(){
-            $(this).popup('destroy').remove();
+      $(function(){
+        $('.floatMenu').on('click', function(){
+          var btn = this;
+          $.floatMenus({
+            position: btn,
+            buttons: [
+              { text: '查看新特性', onClick: function(){ $.alert('您选择了查看新特性'); } },
+              { text: '检查更新', onClick: function(){ $.alert('您选择了检查更新'); } },
+              { text: '退出', onClick: function(){ $.alert('您选择了退出'); } },
+            ],
+          }); 
+        });
+      });
+
+      function alert1(){
+        $.alert('输入错误，请重新输入！');
+      }
+
+      function alert2(){
+        $.alert('输入错误，请重新输入！', function(){
+          $.alert('点击确认');
+        });
+      }
+
+      function confirm1(){
+        $.confirm('您确认要删除吗？');
+      }
+
+      function confirm2(){
+        $.confirm('您确认要删除吗？', function(){
+          $.alert('您点击了确认！');
+        });
+      }
+
+      function confirm3(){
+        $.confirm('警告', '您确认要删除吗？', function(){
+          $.confirm('您想好了吗？', function(){
+            $.alert('已删除！');
           });
+        });
+      }
 
-        
+      function loading1(){
+        $.loading();
+        setTimeout(function(){
+          $.loading('hide');
+        }, 1500);
+      }
 
+      function actions1(){
+        $.actions([
+          { text: '查看新特性', onClick: function(){ $.alert('您选择了查看新特性'); } },
+          { text: '检查更新', onClick: function(){ $.alert('您选择了检查更新'); } },
+          { text: '退出', onClick: function(){ $.alert('您选择了退出'); } },
+        ]); 
       }
 
     </script>

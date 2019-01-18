@@ -1,182 +1,247 @@
 (function($){
 
-    var defaults = {
-        overlay: true,
-        position: 'window',
-        dismissible: true,
-        transition: 'pop',
-        corners: false,
-        fullWidth: false
-    };
-
-	$.toast = function(){
-
-	};
-
-	$.alert = function(title, text, cb){
-		if($.isFunction(text)){
-			cb = text;
-			text = title;
-		}
-
-		var $modal = $('<div class="popup-inner">')
-			.append($('<div class="popup-body">').append($('<p>').text(text || '')))
-			.append($('<div class="popup-buttons">').append(
-				$('<span class="popup-button">确认</span>')
-					.one('click', function(){
-						cb.call();
-					})
-			));
-		if(title){
-			$modal.find('.popup-body').before($('<div class="popup-header">').append($('<div class="popup-title">').text(title)));
-		}
-
-		return $.modal($modal, {
-
-		});
-	};
-
-	$.modal = function(inner, options){
-		var opts = $.extend({}, defaults, options);
-		if(opts.position === 'top'){
-			opts.position = '.popup-support-top';
-			opts.tolerance = '0,0,null,0';
-		} else if (opts.position === 'bottom'){
-			opts.position = '.popup-support-bottom';
-            opts.tolerance = 'null,0,0,0';
-		}
-		var $modal = $('<div>')
-			.html($(inner));
-			/*.appendTo($.mobile.activePage);*/
-
-        // Events
-        $modal.on({
-            'popupcreate': function(){
-				if(func(opts.onCreate)){ opts.onCreate.call(); }
-            },
-            'popupafteropen': function(){
-                if(func(opts.onOpen)){ opts.onOpen.call(); }
-            },
-            'popupbeforeposition': function(){
-                if(func(opts.beforePosition)){ opts.beforePosition.call(); }
-            },
-            'popupafterclose': function(){
-                $.destroyModal($modal);
-                if (opts.afterclose !== 'undefined' && $.isFunction(opts.afterclose)) {
-                    opts.afterclose.call();
-                }
-            }
-        });
-
-		// Create and open
-		$modal.popup({
-				overlayTheme: opts.overlay ? 'b' : undefined,
-				positionTo: opts.position,
-				transition: opts.transition,
-				dismissible: opts.dismissible,
-				corners: opts.corners,
-				tolerance: opts.tolerance,
-				shadow: false
-			});
-		if(opts.fullWidth){
-            $modal.parent().css({ left: 0, right: 0 });
-		}
-        $modal.popup('open');
-
-		return $modal;
-	};
-
-	$.closeModal = function(modal){
-		return $(modal).popup('close');
-	};
-
-	$.destroyModal = function(modal){
-		$(modal).popup('destroy');
-	};
-
-	function func(f){
-		return f !== 'undefined' && $.isFunction(f);
-	}
-
-
-
-})(jQuery);
-
-(function($){
-
 	$(function(){
 		$('body').append('<div class="popup-support-top">')
 			.append('<div class="popup-support-bottom">');
 	});
 
-	var defaults = {
-		overlay: true,
-		corners: false,
-		dismissible: true
+    var defaults = {
+        overlay: true,
+        position: 'window',
+        offset: 0,
+        dismissible: true,
+        transition: 'pop',
+        corners: false,
+        shadow: false,
+        fullWidth: false,
+        stay: 0
+    };
+
+    $.popQueue = []; // popup队列
+    $.activePop = undefined;
+
+    /* Toast 暂时没有好的实现方式 */
+	/*$.toast = function(text){
+		var $inner = $('<div class="popup-inner toast">')
+			.append($('<div class="popup-body">').text(text || ''));
+		return $.popup($inner, {
+			overlay: false,
+			dismissible: true,
+			stay: 1500,
+			position: 'bottom',
+			offset: '35'
+		});
+	};*/
+
+	$.alert = function(title, text, cb){
+		if(text === undefined){
+			text = title;
+			title = undefined;
+		}
+		if($.isFunction(text)){
+			cb = text;
+			text = title;
+			title = undefined;
+		}
+		var buttons = [
+			{ text: '确认', close: true, onClick: cb }
+		];
+		var opts = {
+			dismissible: false
+		};
+
+		return $.modal('alert', title, text, buttons, opts);
 	};
 
-	var methods = {
-		_flyup: function(options){
-			var opts = $.extend({}, defaults, options);
-			var $popup = createPopupWrapper();
-			$popup.append(this.show())
-				.appendTo($.mobile.activePage)
-				.popup({
-					overlayTheme: opts.overlay ? 'b' : undefined,
-					positionTo: '.popup-support-bottom',
-					dismissible: opts.dismissible,
-					transition: 'slideup',
-					corners: opts.corners,
-					tolerance: '0,0,0,0'
-				})
-				.parent().css('left', '0').css('right', '0')
-				.end()
-				.popup('open')
-				.on('popupafterclose', function(){
-					
-				});
-			return this;
-		},
-		_flydown: function(options){
-			var opts = $.extend({}, defaults, options);
-			var $popup = createPopupWrapper();
-			$popup.append(this.show())
-				.appendTo($.mobile.activePage)
-				.popup({
-					overlayTheme: opts.overlay ? 'b' : undefined,
-					positionTo: '.popup-support-top',
-					dismissible: opts.dismissible,
-					transition: 'slidedown',
-					corners: opts.corners,
-					tolerance: '0,0,0,0'
-				})
-				.parent().css('left', '0').css('right', '0')
-				.end()
-				.popup('open')
-				.on('popupafterclose', function(){
-					
-				});
-			return this;
+	$.confirm = function(title, text, cb){
+		if(text === undefined){
+			text = title;
+			title = undefined;
+		}
+		if($.isFunction(text)){
+			cb = text;
+			text = title;
+			title = undefined;
+		}
+		var buttons = [
+			{ text: '取消', close: true },
+			{ text: '确认', close: true, onClick: cb }
+		];
+		var opts = {
+			dismissible: false
+		};
+		return $.modal('confirm', title, text, buttons, opts);
+	};
+
+	$.loading = function(operate, opts){
+		if(!operate || operate === 'show'){
+			var $inner = $('<div class="popup-inner loading">')
+				.append(
+					$('<div class="loading-box">')
+						.append('<div class="loading-gift g1">')
+						.append('<div class="loading-gift g2">')
+						.append('<div class="loading-gift g3">')
+				);
+			return $.popup($inner, {
+				dismissible: false,
+				overlay: false,
+				position: 'window'
+			});
+		} else {
+			return $.closePopup($('.popup-inner.loading').parents('.ui-popup'));
 		}
 	};
 
-	function createPopupWrapper(){
-		return $('<div data-role="popup">');
+	$.actions = function(title, buttons){
+		if(typeof title === 'object'){
+			buttons = title;
+			title = undefined;
+		}
+		var $inner = $('<div class="popup-inner actions">');
+		if(title){
+			$inner.append($('<div class="popup-header">').append('<div class="popup-title">'+ title +'</div>'));
+		}
+		var $actions = $('<ul>');
+		$.each(buttons, function(i, btn){
+			$actions.append(
+				$('<li class="popup-close">').text(btn.text).on('click', btn.onClick)
+			);
+		});
+		$actions.append($('<li class="popup-close actions-cancel">').text('取消'));
+		$inner.append($('<div class="popup-body">').append($actions));
+		
+		return $.popup($inner, {
+			dismissible: true,
+			position: 'bottom',
+			fullWidth: true,
+			transition: 'slideup'
+		});
+	};
+
+	$.floatMenus = function(title, options){
+		if(typeof title === 'object'){
+			options = title;
+			title = undefined;
+		}
+		var $inner = $('<div class="popup-inner float-menus">');
+		if(title){
+			$inner.append($('<div class="popup-header">').append('<div class="popup-title">'+ title +'</div>'));
+		}
+		var $actions = $('<ul>');
+		$.each(options.buttons, function(i, btn){
+			$actions.append(
+				$('<li class="popup-close"></li>').append(
+					$('<a href="javascript:;" class="link"></a>').text(btn.text).on('click', btn.onClick)
+				)
+			);
+		});
+		$inner.append($('<div class="popup-body no-padding">').append($actions));
+		
+		return $.popup($inner, {
+			dismissible: true,
+			position: options.position,
+			fullWidth: false,
+			transition: 'pop',
+			arrow: 'b,t'
+		});
+	};
+
+	// 通用modal
+	$.modal = function(type, title, body, buttons, options){
+		options = options || {};
+		var $inner = $('<div class="popup-inner '+ (type || '') +'">');
+		if(type === 'confirm'){
+			$inner.addClass('popup-info');
+		}
+		if(title){
+			$inner.append($('<div class="popup-header"><div class="popup-title">'+ title +'</div></div>'));
+		}
+		$inner.append($('<div class="popup-body">').html(body));
+		if(buttons && buttons.length > 0){
+			var $buttons = $('<div class="popup-buttons">');
+			$.each(buttons, function(i, btn){
+				$buttons.append(
+					$('<span>').text(btn.text)
+						.addClass(btn.close ? 'popup-button popup-close' : 'popup-button')
+						.one('click', btn.onClick)
+				);
+			});
+			$inner.append($buttons);
+		}
+		return $.popup($inner, options);
+	};
+
+	$.popup = function(inner, options){
+		var opts = $.extend({}, defaults, options);
+		if(opts.position === 'top'){
+			opts.position = '.popup-support-top';
+			opts.tolerance = '0,'+ opts.offset +',null,0';
+		} else if (opts.position === 'bottom'){
+			opts.position = '.popup-support-bottom';
+            opts.tolerance = 'null,0,'+ opts.offset +',0';
+		}
+		var $popup = $('<div>').append($(inner));
+
+        // Events
+        $popup.on({
+            'popupcreate': function(e, ui){
+				if(func(opts.onCreate)){ opts.onCreate($popup); }
+            },
+            'popupafteropen': function(){
+                if(func(opts.onOpen)){ opts.onOpen($popup); }
+            },
+            'popupbeforeposition': function(){
+                if(func(opts.beforePosition)){ opts.beforePosition($popup); }
+            },
+            'popupafterclose': function(){
+            	$.activePop = undefined;
+                $.destroyPopup($popup);
+                if (func(opts.afterclose)) { opts.afterclose($popup); }
+
+                if($.popQueue.length){
+                	$.popQueue.shift()();
+                }
+            }
+        });
+
+        // Create and open
+		$popup.popup({
+			overlayTheme: opts.overlay ? 'b' : undefined,
+			positionTo: opts.position,
+			transition: opts.transition,
+			dismissible: opts.dismissible,
+			corners: opts.corners,
+			tolerance: opts.tolerance,
+			shadow: opts.shadow,
+			arrow: opts.arrow
+		});
+		if(opts.fullWidth){
+            $popup.parent().css({ left: 0, right: 0 });
+		}
+        $popup.find('.popup-close').on('click', function(){
+        	$.closePopup($popup);
+        });
+        
+        $.popQueue.push(function(){ return $.openPopup($popup, opts); });
+        if(!$.activePop){ return $.popQueue.shift()(); }
+        return $popup;
+	};
+
+	$.openPopup = function(popup){
+		$.activePop = $(popup);
+		return $(popup).popup('open');
 	}
 
-	$.fn.extend({
-		'flyup': function(options){
-			if(this.length > 1){
-				throw new Error('每次只能弹出一个!');
-			}
-			return methods._flyup.apply(this, arguments);
-		},
-		'flydown': function(options){
-			if(this.length > 1){
-				throw new Error('每次只能弹出一个!');
-			}
-			return methods._flydown.apply(this, arguments);
-		}
-	});
+	$.closePopup = function(popup){
+		return  $(popup).popup('close');
+	};
+
+	$.destroyPopup = function(popup){
+		return $(popup).popup('destroy');
+	};
+
+	function func(f){
+		return f !== undefined && $.isFunction(f);
+	}
 
 })(jQuery);

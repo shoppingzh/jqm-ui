@@ -4829,11 +4829,14 @@ html head + body .ui-body-a.ui-focus {
 }
 
 /* Popup */
-/* 去除原有边框、减小边框圆角 */
 .ui-popup{
-	border: none!important;
+	border: none!important; /* 去除原有边框、减小边框圆角 */
 	border-radius: .35em;
 	background-color: transparent;
+}
+.ui-popup-arrow{
+	background-color: #fff!important; 
+	border: none!important;
 }
 /* Tabs */
 /*  */

@@ -10702,10 +10702,10 @@ $.widget( "mobile.popup", {
 				cx: windowCoordinates.cx - this._tolerance.l - this._tolerance.r,
 				cy: windowCoordinates.cy - this._tolerance.t - this._tolerance.b
 			};
-			console.log(windowCoordinates.cx);
+			/*console.log(windowCoordinates.cx);
 			console.log('rectangle: ' + $.each(rectangle, function(k, v){
 				console.log(k + ' == ' + v);
-			}));
+			}));*/
 
 		if ( !infoOnly ) {
 			// Clamp the width of the menu before grabbing its size

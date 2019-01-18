@@ -1,4 +1,4 @@
-### Modal扩展
+### Popup扩展
 - Alert 提示框
 - Confirm 确认提示框
 - Picker 从下方出来的选择栏
@@ -8,7 +8,7 @@
 - Popover 弹在元素上的弹出框
 
 
-### Modal参数
+### Popup参数
 1. fullWidth 是否占满屏幕宽度
 2. overlay 是否需要遮罩层
 3. dismissible 是否可点击遮罩层关闭
