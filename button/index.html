@@ -12,12 +12,12 @@
   <body>
 
     <div data-role="page" data-theme="a">
-      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
         <h3>Button</h3>
       </div>
       <div role="main" class="ui-content">
-        <div>
+        <div class="demo">
           <h5>Buttons</h5>
           <button class="ui-btn">Default</button>
           <button class="ui-btn ui-btn-primary">Primary</button>
@@ -27,7 +27,7 @@
           <button class="ui-btn ui-btn-danger">Danger</button>
           <button class="ui-btn ui-btn-dark">Dark</button>
         </div>
-        <div>
+        <div class="demo">
           <h5>In-line Buttons</h5>
           <button class="ui-btn ui-btn-inline">Default</button>
           <button class="ui-btn ui-btn-primary ui-btn-inline">Primary</button>
@@ -37,7 +37,7 @@
           <button class="ui-btn ui-btn-danger ui-btn-inline">Danger</button>
           <button class="ui-btn ui-btn-dark ui-btn-inline">Dark</button>
         </div>
-        <div>
+        <div class="demo">
           <h5>Button with corners</h5>
           <button class="ui-btn ui-corner-all">Default</button>
           <button class="ui-btn ui-btn-primary ui-corner-all">Primary</button>
@@ -54,7 +54,7 @@
           <button class="ui-btn ui-btn-danger ui-btn-inline ui-corner-all">Danger</button>
           <button class="ui-btn ui-btn-dark ui-btn-inline ui-corner-all">Dark</button>
         </div>
-        <div>
+        <div class="demo">
           <h5>Button with big corners</h5>
           <button class="ui-btn ui-corner-lg">Default</button>
           <button class="ui-btn ui-btn-primary ui-corner-lg">Primary</button>
@@ -71,7 +71,7 @@
           <button class="ui-btn ui-btn-danger ui-btn-inline ui-corner-lg">Danger</button>
           <button class="ui-btn ui-btn-dark ui-btn-inline ui-corner-lg">Dark</button>
         </div>
-        <div>
+        <div class="demo">
           <h5>Hollow Buttons</h5>
           <button class="ui-btn ui-btn-inline ui-btn-hollow">Default</button>
           <button class="ui-btn ui-btn-primary ui-btn-inline ui-btn-hollow">Primary</button>
@@ -81,7 +81,7 @@
           <button class="ui-btn ui-btn-danger ui-btn-inline ui-btn-hollow">Danger</button>
           <button class="ui-btn ui-btn-dark ui-btn-inline ui-btn-hollow">Dark</button>
         </div>
-        <div>
+        <div class="demo">
           <h5>Button size</h5>
           <button class="ui-btn ui-btn-inline ui-btn-xs">Default xs</button>
           <button class="ui-btn ui-btn-primary ui-btn-inline ui-btn-sm">Primary sm</button>
@@ -89,7 +89,18 @@
           <button class="ui-btn ui-btn-success ui-btn-inline ui-btn-lg">Success lg</button>
           <button class="ui-btn ui-btn-warning ui-btn-inline ui-btn-xlg">Warning xlg</button>
         </div>
+        <div class="demo">
+          <h5>按钮组</h5>
+          <div data-role="controlgroup" data-type="horizontal">
+            <button class="ui-btn ui-btn-sm">Default</button>
+            <button class="ui-btn ui-btn-primary ui-btn-sm">Primary</button>
+            <button class="ui-btn ui-btn-info ui-btn-sm">Info</button>
+            <button class="ui-btn ui-btn-success ui-btn-sm">Success</button>
+          </div>
+        </div>
       </div>
+
+      
 
 
     </div>

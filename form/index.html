@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.ui.js"></script>
   </head>
   <body>
 
     <div data-role="page" data-theme="a">
-      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
         <h3>Form</h3>
       </div>
       <div role="main" class="ui-content">
@@ -46,9 +47,9 @@
               </div>
             </li>
             <li class="ui-form-item">
-              <label>性别</label>
+              <label>已婚</label>
               <div class="ui-form-item-content">
-                <input type="radio" data-role="flipswitch" data-on-text="男" data-off-text="女" checked>
+                <input type="radio" data-mini="true" data-role="flipswitch" data-on-text="是" data-off-text="否">
               </div>
             </li>
             <li class="ui-form-item">

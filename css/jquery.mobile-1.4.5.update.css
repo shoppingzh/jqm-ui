@@ -8,12 +8,6 @@ p{
   margin: 1em 0;
 }
 /* Colors */
-.color-dark{
-  color: #111!important;
-}
-.color-lightdark{
-  color: #333!important;
-}
 .color-grey{
   color: #666!important;
 }
@@ -432,7 +426,7 @@ p{
 .ui-form select{
   height: 3em;
 }
-.ui-form label{
+.ui-form .ui-form-item label{
   display: block;
   font-size: .85em;
   width: 35%;
@@ -440,6 +434,10 @@ p{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.ui-form .ui-form-item.focus label{
+  color: #ff6600;
+  font-weight: 600;
 }
 
 /* Popup */
@@ -635,4 +633,39 @@ p{
 }
 .popup-inner.actions ul>li.actions-cancel{
   border-top: 12px solid #ddd;
+}
+
+/* Horizontal view */
+.horizontal-view{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap; /* 水平布局要求项目不换行 */
+  overflow-x: auto;
+}
+.horizontaol-view>div,
+.horizontal-view>.item{
+  display: inline-block;
+  margin-right: 1em;
+  width: 85%;
+  flex: 0 0 auto;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+}
+
+/* Navbar */
+.ui-page-theme-a .navbar{
+  background-color: #38c;
+  color: #fff;
+  border: none;
+  text-shadow: none;
+  opacity: .9;
+}
+.ui-page-theme-a .navbar .ui-btn{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  text-shadow: none;
+}
+.ui-page-theme-a .navbar .ui-title{
+  font-weight: 500;
 }

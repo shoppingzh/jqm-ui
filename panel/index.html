@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" data-theme="a">
+      <div data-role="panel" id="p1" data-position="right" data-display="push">
+        <ul data-role="listview" class="ui-form">
+          <li data-role="list-divider">基本信息</li>
+          <li class="ui-form-item">
+            <label>姓名</label>
+            <div class="ui-form-item-content">
+              <input data-role="none" type="text" name="name" value placeholder="输入姓名">
+            </div>
+          </li>
+          <li class="ui-form-item">
+            <label>账号</label>
+            <div class="ui-form-item-content">
+              <input data-role="none" type="text" name="acc" value placeholder="输入账号">
+            </div>
+          </li>
+          <li data-role="list-divider">其它信息</li>
+          <li class="ui-form-item">
+            <label>爱吃的水果</label>
+            <div class="ui-form-item-content">
+              <select data-role="none" name="fruit">
+                <option>苹果</option>
+                <option>梨子</option>
+                <option>橘子</option>
+                <option>香蕉</option>
+                <option>橙子</option>
+                <option>西瓜</option>
+              </select>
+            </div>
+          </li>
+          <li class="ui-form-item">
+            <label>国籍</label>
+            <div class="ui-form-item-content">
+              <input data-role="none" type="text" name="acc" value placeholder="输入国籍">
+            </div>
+          </li>
+          <li class="ui-form-item">
+            <label>手机号码</label>
+            <div class="ui-form-item-content">
+              <input data-role="none" type="text" name="acc" value placeholder="输入手机号码">
+            </div>
+          </li>
+          <li class="ui-form-item">
+            <label>是否单身</label>
+            <div class="ui-form-item-content">
+              <input type="radio" data-role="flipswitch" data-mini="true" data-on-text="是" data-off-text="否">
+            </div>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+        <button class="ui-btn ui-btn-sm ui-btn-dark ui-corner-all">提交</button>
+      </div><!-- /#p1 -->
+      <div data-role="panel" id="p2" data-position="left" data-display="reveal">
+        <ul data-role="listview" data-inset="false">
+          <li data-role="list-divider">基础例程</li>
+          <li><a data-ajax="false" href="../text/index.html">Text</a></li>
+          <li><a data-ajax="false" href="../button/index.html">Button</a></li>
+          <li><a data-ajax="false" href="../listview/index.html">Listview</a></li>
+          <li><a data-ajax="false" href="../badge/index.html">Badge</a></li>
+          <li><a data-ajax="false" href="../collapsible/index.html">Collapsible</a></li>
+          <li><a data-ajax="false" href="../grid/index.html">Grid</a></li>
+          <li><a data-ajax="false" href="../card/index.html">Card</a></li>
+          <li><a data-ajax="false" href="../form/index.html">Form</a></li>
+          <li><a data-ajax="false" href="../popup/index.html">Popup</a></li>
+          <li><a data-ajax="false" href="../navbar/index.html">Navbar</a></li>
+          <li><a data-ajax="false" href="../tab/index.html">Tab</a></li>
+          <li><a data-ajax="false" href="../horizontal-view/index.html">Horizontal view</a></li>
+          <li><a data-ajax="false" href="../panel/index.html">Panel</a></li>
+          <li data-role="list-divider"><h3>其它例子</h3></li>
+          <li><a data-ajax="false" href="examples/comment.html">评论列表</a></li>
+          <li><a data-ajax="false" href="examples/comment.html">验证码</a></li>
+        </ul>
+      </div><!-- /#p2 -->
+      <div data-role="header" class="navbar" data-position="fixed" data-tap-toggle="false">
+        <a data-ajax="false" href="../menus.html" data-icon="carat-l">返回</a>
+        <h3>Panel</h3>
+        <a data-ajax="false" href="#p1" data-icon="gear" data-iconpos="right">筛选</a>
+      </div>
+      <div role="main" class="ui-content">
+        
+        <div class="demo">
+          <h5>左侧菜单</h5>
+          <a href="#p2" class="link">打开菜单</a> 
+        </div>
+
+        <div class="demo">
+          <h5>右侧菜单</h5>
+          <a href="#p1" class="link">右侧菜单(也可点击顶部右侧筛选按钮)</a>
+        </div>
+
+        <div class="demo">
+          <div class="card">
+            <div class="card-content">
+              <p><span class="color-warning" style="font-weight: 600;">tips: </span>  左侧Panel常作为菜单使用，右侧Panel则适合条件检索或附加信息显示的场景</p>
+            </div>
+          </div>
+        </div>
+          
+
+
+      </div>
+
+    </div>
+
+  </body>
+</html>

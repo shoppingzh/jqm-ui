@@ -13,8 +13,8 @@
   <body>
 
     <div data-role="page" data-theme="a" class="ui-noboxshadow">
-      <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="b">
-        <a data-ajax="false" href="../menus.html" class="ui-btn ui-corner-all">返回</a>
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
         <h3>Popup</h3>
         <a data-ajax="false" href="javascript:;" class="ui-btn floatMenu">菜单</a>
       </div>
@@ -51,51 +51,12 @@
           <a href="javascript:;" class="link floatMenu">点击打开浮动菜单</a>
         </div>
 
-        <div>
-          <h5>选择</h5>
-          <ul data-role="listview" class="chooser">
-            <li>香蕉</li>
-            <li>菠萝</li>
-            <li>哈密瓜</li>
-            <li>萨瓦迪卡</li>
-            <li>阔你气哇</li>
-          </ul>
-        </div>
-      
-        <div class="demo">
-          <h5>选择器</h5>
-          <ul data-role="listview" class="ui-form">
-            <li class="ui-form-item">
-              <label>性别</label>
-              <div class="ui-form-item-content">
-                <select data-role="none" class="">
-                  <option>男</option>
-                  <option>女</option>
-                  <option>未知</option>
-                </select>
-              </div>
-            </li>
-            <li class="ui-form-item">
-              <label>喜欢的水果</label>
-              <div class="ui-form-item-content">
-                <select data-role="none" class="mutiple">
-                  <option>苹果</option>
-                  <option>香蕉</option>
-                  <option>橙子</option>
-                  <option>葡萄</option>
-                </select>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-
-
       </div>
     </div>
     <script type="text/javascript">
 
       $(function(){
+
         $('.floatMenu').on('click', function(){
           var btn = this;
           $.floatMenus({
@@ -138,7 +99,7 @@
       }
 
       function loading1(){
-        $.loading();
+        $.loading('show');
         setTimeout(function(){
           $.loading('hide');
         }, 1500);

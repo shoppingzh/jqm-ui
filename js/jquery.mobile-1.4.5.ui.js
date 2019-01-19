@@ -1,4 +1,31 @@
-(function($){
+
+/* 
+ * ==============================================
+ *                    Forms
+ * ==============================================
+ */
+;(function($){
+
+	$(function(){
+		// 表单项选中样式
+		$('input, textarea, select', '.ui-form').on({
+			focus:  function(){
+				$(this).parents('.ui-form-item').addClass('focus');
+			},
+			blur: function(){
+				$(this).parents('.ui-form-item').removeClass('focus');
+			}
+		});
+	});
+
+})(jQuery);
+
+/* 
+ * ==============================================
+ *                    Popups
+ * ==============================================
+ */
+;(function($){
 
 	$(function(){
 		$('body').append('<div class="popup-support-top">')
@@ -19,6 +46,8 @@
 
     $.popQueue = []; // popup队列
     $.activePop = undefined;
+
+    console.log($.prototype);
 
     /* Toast 暂时没有好的实现方式 */
 	/*$.toast = function(text){
@@ -243,7 +272,7 @@
 	};
 
 	function lockScreen(){
-		$('body').css('overflowY', 'hidden');
+		
 	}
 
 	function unlockScreen(){

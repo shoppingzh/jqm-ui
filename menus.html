@@ -13,31 +13,33 @@
 
     <div data-role="page">
       <div id="aboutMe" data-role="panel" data-position="right" data-display="overlay">
-        <p>Hello, jqm UI!</p>
+        <p><a class="link" href="javascript:;">jqm UI 文档</a></p>
       </div>
-      <div class="index-header" data-role="header" data-theme="b" data-position="fixed" data-tap-toggle="false">
+      <div class="index-header navbar" data-role="header" data-position="fixed" data-tap-toggle="false">
         <h3 style="white-space: normal;margin: 0; color: #fff;">jQuery mobile UI</h3>
       </div>
       <div role="main" class="ui-content">
         <ul data-role="listview" data-inset="false">
+          <li data-role="list-divider">基本组件</li>
+          <li><a data-ajax="false" href="text/index.html">Text</a></li>
           <li><a data-ajax="false" href="button/index.html">Button</a></li>
           <li><a data-ajax="false" href="listview/index.html">Listview</a></li>
           <li><a data-ajax="false" href="badge/index.html">Badge</a></li>
-          <li><a data-ajax="false" href="controlgroup/index.html">Control group</a></li>
-          <li><a data-ajax="false" href="switch/index.html">Switch</a></li>
           <li><a data-ajax="false" href="collapsible/index.html">Collapsible</a></li>
           <li><a data-ajax="false" href="grid/index.html">Grid</a></li>
           <li><a data-ajax="false" href="card/index.html">Card</a></li>
           <li><a data-ajax="false" href="form/index.html">Form</a></li>
           <li><a data-ajax="false" href="popup/index.html">Popup</a></li>
+          <li><a data-ajax="false" href="navbar/index.html">Navbar</a></li>
           <li><a data-ajax="false" href="tab/index.html">Tab</a></li>
+          <li><a data-ajax="false" href="horizontal-view/index.html">Horizontal view</a></li>
+          <li><a data-ajax="false" href="panel/index.html">Panel</a></li>
           <li data-role="list-divider"><h3>其它例子</h3></li>
           <li><a data-ajax="false" href="examples/comment.html">评论列表</a></li>
           <li><a data-ajax="false" href="examples/comment.html">验证码</a></li>
-          
         </ul>
       </div>
-      <div data-role="footer" data-theme="b" data-position="fixed">
+      <div data-role="footer" class="navbar" data-position="fixed">
         <div data-role="navbar">
           <ul>
             <li><a data-ajax="false" href="menus.html" data-icon="grid">组件</a></li>
