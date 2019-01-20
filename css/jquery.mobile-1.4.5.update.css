@@ -394,6 +394,8 @@ p{
   flex-shrink: 1;
   width: 100%;
   padding-left: .2em; /* 保持一定间距，当label超长时不至于挤到一起 */
+  position: relative;
+  padding-right: 1em; /* 为其它按钮如清楚按钮预留空间 */
 }
 .ui-form input[type="text"],
 .ui-form input[type="password"],
@@ -424,11 +426,11 @@ p{
 .ui-form input[type="time"],
 .ui-form input[type="file"],
 .ui-form select{
-  height: 3em;
+  height: 2.75em;
 }
 .ui-form .ui-form-item label{
   display: block;
-  font-size: .85em;
+  font-size: .9em;
   width: 35%;
   margin: 0;
   overflow: hidden;
@@ -438,6 +440,55 @@ p{
 .ui-form .ui-form-item.focus label{
   color: #ff6600;
   font-weight: 600;
+}
+.ui-form.form-shrink .ui-form-item.focus label{
+  width: 0;
+}
+.ui-form .input-clear{
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -.5em;
+  width: 1em;
+  height: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ccc;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 1;
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+  transform: rotate(45deg);
+}
+.ui-form .input-clear:before{
+  content: '\002B';
+}
+.ui-form .form-invalid{
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #F43530;;
+  border-radius: 50%;
+  font-style: normal;
+  font-size: 1em;
+  color: #f0f0f0;
+  flex-shrink: 0; /* 不收缩 */
+  margin-left: .35em;
+
+}
+.ui-form .form-invalid:before{
+  content: "\0021";
+  display: inline-block;
 }
 
 /* Popup */
@@ -470,7 +521,6 @@ p{
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  -webkit-text-overflow: ellipsis;
 }
 .popup-inner .popup-body{
   font-size: 14px;
@@ -508,7 +558,6 @@ p{
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  -webkit-text-overflow: ellipsis;
   text-overflow: ellipsis;
   padding: 0 .15em;
   font-size: 1em;
@@ -668,4 +717,87 @@ p{
 }
 .ui-page-theme-a .navbar .ui-title{
   font-weight: 500;
+}
+
+/* Chip */
+.chip:before{
+  content: ' ';
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: .8em;
+  height: .8em;
+  line-height: 1em;
+  margin-right: .25em;
+  border-radius: 100%;
+  background-color: #666;
+  overflow: hidden;
+}
+.chip.chip-primary:before{
+  background-color: #3b94e7;
+}
+.chip.chip-info:before{
+  background-color: #3bb4f2;
+}
+.chip.chip-success:before{
+  background-color: #5eb95e;
+}
+.chip.chip-warning:before{
+  background-color: #f37b1d;
+}
+.chip.chip-danger:before{
+  background-color: #dd514c;
+}
+
+.chip-star{
+  position: relative;
+}
+.chip-star:before,
+.chip-snow:before{
+  display: inline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 2em;
+  max-height: 2em;
+  overflow: hidden;
+  color: #3b94e7;
+  font-size: 1.2em;
+  font-weight: inherit;
+  margin-right: .25em;
+}
+.chip-star:before{
+  content: '\2605';
+}
+.chip-snow:before{
+  content: '\273D';
+}
+.chip-heart:before{
+  content: '\2764';
+}
+.chip-star.chip-primary:before,
+.chip-snow.chip-primary:before,
+.chip-heart.chip-primary:before{
+  color: #3b94e7;
+}
+.chip-star.chip-info:before,
+.chip-snow.chip-info:before,
+.chip-heart.chip-info:before{
+  color: #3bb4f2;
+}
+.chip-star.chip-success:before,
+.chip-snow.chip-success:before,
+.chip-heart.chip-success:before{
+  color: #5eb95e;
+}
+.chip-star.chip-warning:before,
+.chip-snow.chip-warning:before,
+.chip-heart.chip-warning:before{
+  color: #f37b1d;
+}
+.chip-star.chip-danger:before,
+.chip-snow.chip-danger:before,
+.chip-heart.chip-danger:before{
+  color: #dd514c;
 }
