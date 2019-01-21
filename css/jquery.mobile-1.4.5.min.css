@@ -4802,6 +4802,10 @@ html head + body .ui-body-a.ui-focus {
 }
 
 /* Listview */
+.ui-content .ui-listview{
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .ui-listview>li .ui-lv-item-right{
 	position: absolute;
 	top: 50%;
@@ -4816,6 +4820,7 @@ html head + body .ui-body-a.ui-focus {
 	/*text-shadow: none;*/ /* 暂不去除分割行的文本阴影 */
 	color: #444;
 }
+
 .ui-page-theme-a .ui-listview .ui-btn{
 	border-color: #eee;
 }

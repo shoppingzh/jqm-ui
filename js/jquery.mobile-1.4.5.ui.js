@@ -1,6 +1,62 @@
 
 /* 
  * ==============================================
+ *                    Picker
+ * ==============================================
+ */
+ (function($){
+
+ 	/*
+	 * multiple(Boolean): 是否可多选，默认单选
+ 	 */
+ 	var defaults = {
+ 		multiple: false
+ 	};
+
+ 	$.fn.picker = function(options){
+ 		var opts = $.extend({}, defaults, options);
+ 		return this.each(function(){
+ 			var $this = $(this);
+ 			if($this.hasClass('ui-listview') && !$this.hasClass('ui-selector')){
+ 				$this.addClass('ui-selector')
+ 				if(opts.multiple){
+ 					$this.addClass('multiple');
+ 				}
+ 				
+ 				$this.find('li').addClass('ui-selector-item')
+ 					.append('<div class="ui-selector-icon">')
+ 					.on('click', function(){
+ 						if(opts.multiple){
+ 							$(this).toggleClass('selected');
+ 						}else{
+ 							$(this).addClass('selected')
+ 								.siblings('.ui-selector-item').removeClass('selected');
+ 						}
+ 					});
+ 			}
+ 		});
+ 	};
+
+ 	$.fn.getPickResult = function(){
+ 		var r = [];
+ 		$(this).find('.ui-selector-item.selected').each(function(){
+ 			var $item = $(this);
+ 			r.push({
+ 				index: $item.index(),
+ 				html: $item.html(),
+ 				content: $item.text()
+ 			});
+ 		});
+
+ 		return r;
+ 	};
+
+
+
+ })(jQuery);
+
+/* 
+ * ==============================================
  *                    Forms
  * ==============================================
  */
@@ -75,8 +131,6 @@
 
     $.popQueue = []; // popup队列
     $.activePop = undefined;
-
-    console.log($.prototype);
 
     /* Toast 暂时没有好的实现方式 */
 	/*$.toast = function(text){
@@ -243,7 +297,6 @@
         // Events
         $popup.on({
             'popupcreate': function(e, ui){
-            	lockScreen();
 				if(func(opts.onCreate)){ opts.onCreate($popup); }
             },
             'popupafteropen': function(){
@@ -253,7 +306,6 @@
                 if(func(opts.beforePosition)){ opts.beforePosition($popup); }
             },
             'popupafterclose': function(){
-            	unlockScreen();
             	$.activePop = undefined;
                 $.destroyPopup($popup);
                 if (func(opts.afterclose)) { opts.afterclose($popup); }
@@ -299,14 +351,6 @@
 	$.destroyPopup = function(popup){
 		return $(popup).popup('destroy');
 	};
-
-	function lockScreen(){
-		
-	}
-
-	function unlockScreen(){
-		$('body').css('overflowY', 'auto');
-	}
 
 	function func(f){
 		return f !== undefined && $.isFunction(f);

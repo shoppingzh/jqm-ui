@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.ui.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
+        <h3>Picker</h3>
+      </div>
+      <div role="main" class="ui-content">
+
+        <div class="demo">
+          <h5>单选</h5>
+          <ul id="radio1" data-role="listview">
+            <li>
+              <h3>Apple</h3>
+              <p>一种很健康的水果</p>
+              <p>建议平时多吃</p>
+            </li>
+            <li>
+               Banana
+            </li>
+            <li>
+              Orange
+            </li>
+            <li>Dog</li>
+            <li>Caw</li>
+            <li>People</li>
+          </ul>
+          <button class="ui-btn ui-btn-sm ui-corner-all ui-btn-warning showResults">查看结果</button>
+        </div>
+
+        <div class="demo">
+          <h5>多选</h5>
+          <ul id="checkbox1" data-role="listview">
+            <li>
+              <h3>Apple</h3>
+              <p>一种很健康的水果</p>
+              <p>建议平时多吃</p>
+            </li>
+            <li>
+               Banana
+            </li>
+            <li>
+              Orange
+            </li>
+            <li>Dog</li>
+            <li>Caw</li>
+            <li>People</li>
+          </ul>
+          <button class="ui-btn ui-btn-sm ui-corner-all ui-btn-warning showResults">查看结果</button>
+        </div>
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      /*$('li').click(function(){
+        $(this).addClass('selected');
+      });*/
+      $(function(){
+        $('#radio1').picker({
+          multiple: false
+        });
+        $('#checkbox1').picker({ multiple: true });
+
+        $('.showResults').on('click', function(){
+          var r = $(this).siblings('ul').getPickResult();
+          var t = [];
+          t.push('您选中了：');
+          $.each(r, function(i, e){
+            t.push(e.index + ': ' + e.content);
+          });
+          $.alert(t.join('<br>'));
+        });
+      });
+
+    </script>
+
+  </body>
+</html>
