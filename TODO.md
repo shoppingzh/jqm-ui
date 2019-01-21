@@ -7,7 +7,9 @@
    - Validation
    - Select
 3. Icon
-4. 
+4. 分割线
+5. 滚动消息
+6. 时间轴
 
 
 ### Examples
