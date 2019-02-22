@@ -4860,7 +4860,12 @@ html head + body .ui-body-a.ui-focus {
 	position: fixed!important;
 }
 /* Tabs */
-/*  */
 .ui-tabs{
 	padding: 0;
 }
+
+/* 表单相关 */
+.ui-input-text{
+	border-radius: .25em;
+}
+

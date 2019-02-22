@@ -51,8 +51,8 @@ p{
 /* Buttons */
 .ui-btn.ui-btn-primary{
   background-color: #3b94e7 !important;
-  border-color: #3b94e7;
-  color: #fff;
+  border-color: #3b94e7!important;
+  color: #fff!important;
 }
 .ui-page-theme-a .ui-btn-primary:hover{
   border-color: #3b94e7!important;
@@ -378,10 +378,16 @@ p{
 /* 使用flex布局实现，flex布局学习请见：https://www.cnblogs.com/xuyuntao/articles/6391728.html */
 .ui-form .ui-form-item{
   display: flex!important;
+  display: -webkit-flex!important;
+  display: -webkit-box!important;
   box-sizing: border-box;
   overflow: hidden;
   justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
   align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
   padding: .2em 1em;
   position: relative;
 }
