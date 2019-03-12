@@ -1,6 +1,5 @@
-
-/*  */
-.flex-box{
+/* Flex通用布局 */
+.item-content{
 	display: flex;
 	display: -webkit-flex;
 	display: -webkit-box;
@@ -12,7 +11,7 @@
 	-webkit-box-align: center;
 	box-sizing: border-box;
 }
-.flex-box .flex-inner{
+.item-content .item-inner{
 	overflow: hidden;
 	display: flex;
 	display: -webkit-flex;
@@ -26,7 +25,7 @@
 	box-sizing: border-box;
 	width: 100%;
 }
-.flex-title{
+.item-title{
 	width: 35%;
 	flex-shrink: 1;
 	-webkit-flex-shrink: 1;
@@ -35,8 +34,6 @@
 .flex-content{
 	width: 100%;
 	-webkit-box-flex: 1; /* 所有的.flex-content元素等分flex容器的主轴空间 */
-	-ms-flex: 1;
 	flex-shrink: 1; /* 空间不够时自动缩放 */
 	-webkit-flex-shrink: 1;
-	-ms-flex: 0 1 auto;
 }
