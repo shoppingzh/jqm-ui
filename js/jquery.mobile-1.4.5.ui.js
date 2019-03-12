@@ -132,19 +132,6 @@
     $.popQueue = []; // popup队列
     $.activePop = undefined;
 
-    /* Toast 暂时没有好的实现方式 */
-	/*$.toast = function(text){
-		var $inner = $('<div class="popup-inner toast">')
-			.append($('<div class="popup-body">').text(text || ''));
-		return $.popup($inner, {
-			overlay: false,
-			dismissible: true,
-			stay: 1500,
-			position: 'bottom',
-			offset: '35'
-		});
-	};*/
-
 	$.alert = function(title, text, cb){
 		if(text === undefined){
 			text = title;
@@ -342,7 +329,7 @@
 	$.openPopup = function(popup){
 		$.activePop = $(popup);
 		return $(popup).popup('open');
-	}
+	};
 
 	$.closePopup = function(popup){
 		return  $(popup).popup('close');

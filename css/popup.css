@@ -1,0 +1,196 @@
+/* Popup */
+
+/* 
+ * jQuery mobile的popup组件样式更改：
+ * 1. 去除popup容器边框与背景色
+ * 2. 更改遮罩层的定位方式
+ */
+.ui-popup{
+  border: none!important; 
+  border-radius: 0;
+  background-color: transparent;
+}
+.ui-popup-arrow{
+  background-color: #fff!important; 
+  border: none!important;
+}
+.ui-popup-screen{
+  position: fixed!important;
+}
+
+.popup-inner{
+  background-color: #fff;
+  position: relative;
+  border-top: 4px solid transparent;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  min-width: 18em;
+}
+
+.popup-inner .popup-header{
+  text-align: center;
+}
+.popup-inner .popup-title{
+  font-weight: 800;
+  margin: 0;
+  padding: 5px 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.popup-inner .popup-body{
+  font-size: 16px;
+  padding: 2em 1em;
+}
+.popup-inner .popup-body.no-padding{
+  padding: 0!important;
+}
+.popup-body p,
+.popup-body h1,
+.popup-body h2,
+.popup-body h3,
+.popup-body h4,
+.popup-body h5,
+.popup-body h6{
+  margin: 0;
+}
+.popup-inner .popup-buttons{
+  box-sizing: border-box;
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+.popup-buttons .popup-button{
+  display: inline-block;
+  height: 3.2em;
+  line-height: 3.2em;
+  -webkit-box-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 .15em;
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+}
+.popup-buttons .popup-button:not(:last-child):after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #eee;
+}
+/* Popup Support*/
+/* 弹出框的辅助类，帮助popup可在任意位置弹出 */
+.popup-support-top,
+.popup-support-bottom{
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: fixed;
+  visibility: hidden;
+  left: 0;
+}
+.popup-support-top{
+   top: -1px;
+}
+.popup-support-bottom{
+  bottom: -1px;
+}
+.popup-inner.toast,
+.popup-inner.loading{
+  min-width: 0;
+}
+
+/* Alert & Confirm */
+.popup-inner.alert,
+.popup-inner.confirm{
+  border-radius: .3em;
+}
+.popup-inner.alert .popup-body{
+  text-align: center;
+}
+
+/* Loading */
+.popup-inner.loading{
+  background-color: transparent;
+}
+.popup-inner.loading .popup-body{
+  padding: .35em 1em;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 2.875em 2.875em;
+  opacity: .5;
+}
+@keyframes giftani{
+  0% { transform: scale(0);  }
+  50% { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+.loading-box{
+  position: relative;
+  display: inline-block;
+}
+.loading-box .loading-gift{
+  display: inline-block;
+  margin-right: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  animation: giftani 1s infinite ease-in-out both;
+  -webkit-animation: giftani 1s infinite ease-in-out both;
+  border-radius: 20px;
+  background-color: #111;
+}
+.loading-box .loading-gift.g1{
+  animation-delay: -.32s;
+  -webkit-animation-delay: -.32s;
+}
+.loading-box .loading-gift.g2{
+  animation-delay: -.16s;
+  -webkit-animation-delay: -.16s;
+}
+
+/* Actions and Float menus */
+.popup-inner.actions,
+.popup-inner.float-menus{
+  min-width: 0;
+}
+.popup-inner.actions .popup-body{
+  padding: 0;
+}
+.popup-inner.actions ul,
+.popup-inner.float-menus ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.popup-inner.actions ul>li,
+.popup-inner.float-menus ul>li{
+  font-size: 16px;
+  text-align: center;
+  padding: .7em;
+  border-bottom: 1px solid #eee;
+}
+.popup-inner.float-menus ul>li{
+  padding: .7em 2em;
+}
+.popup-inner.actions ul>li:last-child{
+  border-bottom: none;
+}
+.popup-inner.actions ul>li.actions-cancel{
+  border-top: 12px solid #ddd;
+}

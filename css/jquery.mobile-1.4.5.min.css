@@ -4848,7 +4848,7 @@ html head + body .ui-body-a.ui-focus {
 
 /* Popup */
 .ui-popup{
-	border: none!important; /* 去除原有边框、减小边框圆角 */
+	border: none!important; 
 	border-radius: .35em;
 	background-color: transparent;
 }
