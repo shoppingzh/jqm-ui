@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4e5a07-0f74-48f2-b3f8-d738ea995ac2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,11 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/popup.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+            <state relative-caret-position="527">
+              <caret line="58" column="25" lean-forward="true" selection-end-line="195" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="887" column="1" selection-start-line="887" selection-start-column="1" selection-end-line="887" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -76,13 +81,13 @@
         <option value="$PROJECT_DIR$/menus.html" />
         <option value="$PROJECT_DIR$/navbar/index.html" />
         <option value="$PROJECT_DIR$/form/index.html" />
-        <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" />
         <option value="$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js" />
         <option value="$PROJECT_DIR$/css/popup.css" />
+        <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="228" />
     <option name="y" value="104" />
     <option name="width" value="1400" />
@@ -99,6 +104,11 @@
             <path>
               <item name="jqm-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="jqm-ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jqm-ui" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jqm-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,15 +162,16 @@
       <workItem from="1547729941684" duration="5428000" />
       <workItem from="1547954753405" duration="13211000" />
       <workItem from="1552291036704" duration="2556000" />
-      <workItem from="1552359814855" duration="258000" />
+      <workItem from="1552359814855" duration="311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31466000" />
+    <option name="totallyTimeSpent" value="31519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -271,13 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="462" column="25" selection-start-line="462" selection-start-column="25" selection-end-line="462" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-221">
@@ -306,8 +310,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/popup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="55" column="12" lean-forward="true" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="12" />
+        <state relative-caret-position="527">
+          <caret line="58" column="25" lean-forward="true" selection-end-line="195" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="887" column="1" selection-start-line="887" selection-start-column="1" selection-end-line="887" selection-end-column="1" />
         </state>
       </provider>
     </entry>

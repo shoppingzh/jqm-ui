@@ -698,12 +698,12 @@ p{
  * 2. 更改遮罩层的定位方式
  */
 .ui-popup{
-  border: none!important; 
+  border: none!important;
   border-radius: 0;
   background-color: transparent;
 }
 .ui-popup-arrow{
-  background-color: #fff!important; 
+  background-color: #fff!important;
   border: none!important;
 }
 .ui-popup-screen{
@@ -732,8 +732,8 @@ p{
   text-overflow: ellipsis;
 }
 .popup-inner .popup-body{
-  font-size: inherit;
-  padding: 1em 1em 1.6em;
+  font-size: 16px;
+  padding: 2em 1em;
 }
 .popup-inner .popup-body.no-padding{
   padding: 0!important;
@@ -757,8 +757,8 @@ p{
 }
 .popup-buttons .popup-button{
   display: inline-block;
-  height: 3em;
-  line-height: 3em;
+  height: 3.2em;
+  line-height: 3.2em;
   -webkit-box-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -771,7 +771,6 @@ p{
   text-overflow: ellipsis;
   padding: 0 .15em;
   cursor: pointer;
-  
   position: relative;
   font-weight: 400;
 }
@@ -797,7 +796,7 @@ p{
   left: 0;
 }
 .popup-support-top{
-   top: -1px;
+  top: -1px;
 }
 .popup-support-bottom{
   bottom: -1px;
