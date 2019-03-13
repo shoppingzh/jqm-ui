@@ -3,36 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="4b4e5a07-0f74-48f2-b3f8-d738ea995ac2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/badge/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/badge/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/button/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/button/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/card/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chip/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chip/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collapsible/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/collapsible/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controlgroup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/controlgroup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile.ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/divider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/item.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jquery.mobile.ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile.ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop.html" beforeDir="false" afterPath="$PROJECT_DIR$/desktop.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/divider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/divider/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/forgetPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/forgetPassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex布局使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/flex布局使用.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/form/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form/validation.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid/cake.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid/cake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/horizontal-view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/horizontal-view/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.mobile.ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/listview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/listview/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus.html" beforeDir="false" afterPath="$PROJECT_DIR$/menus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/navbar/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/panel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/panel/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/picker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/picker/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/popup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/switch/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/switch/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tab/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/text/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,7 +22,62 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/menus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="55" column="15" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="55" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/divider/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/jquery.mobile.ui.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="469" column="1" lean-forward="true" selection-start-line="469" selection-start-column="1" selection-end-line="469" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/navbar.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/form/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/item.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-72">
+              <caret line="7" column="20" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -63,6 +96,11 @@
       <find>listview</find>
       <find>Listview</find>
       <find>NavBar</find>
+      <find>Divider</find>
+      <find>Form</find>
+      <find>Item</find>
+      <find>Nav</find>
+      <find>Popup</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,21 +117,17 @@
         <option value="$PROJECT_DIR$/css/form.css" />
         <option value="$PROJECT_DIR$/css/flex.css" />
         <option value="$PROJECT_DIR$/examples/forgetPassword.html" />
-        <option value="$PROJECT_DIR$/css/item.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/css/jqm-ui-demos.css" />
         <option value="$PROJECT_DIR$/css/divider.css" />
         <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" />
         <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" />
-        <option value="$PROJECT_DIR$/menus.html" />
         <option value="$PROJECT_DIR$/button/index.html" />
         <option value="$PROJECT_DIR$/badge/index.html" />
         <option value="$PROJECT_DIR$/card/index.html" />
         <option value="$PROJECT_DIR$/chip/index.html" />
         <option value="$PROJECT_DIR$/collapsible/index.html" />
         <option value="$PROJECT_DIR$/controlgroup/index.html" />
-        <option value="$PROJECT_DIR$/divider/index.html" />
-        <option value="$PROJECT_DIR$/form/index.html" />
         <option value="$PROJECT_DIR$/grid/index.html" />
         <option value="$PROJECT_DIR$/horizontal-view/index.html" />
         <option value="$PROJECT_DIR$/listview/index.html" />
@@ -107,15 +141,19 @@
         <option value="$PROJECT_DIR$/css/basic.css" />
         <option value="$PROJECT_DIR$/navbar/index.html" />
         <option value="$PROJECT_DIR$/css/navbar.css" />
-        <option value="$PROJECT_DIR$/css/jquery.mobile.ui.css" />
         <option value="$PROJECT_DIR$/js/popup.js" />
         <option value="$PROJECT_DIR$/popup/index.html" />
-        <option value="$PROJECT_DIR$/css/popup.css" />
         <option value="$PROJECT_DIR$/js/jquery.mobile.ui.js" />
+        <option value="$PROJECT_DIR$/divider/index.html" />
+        <option value="$PROJECT_DIR$/css/item.css" />
+        <option value="$PROJECT_DIR$/form/index.html" />
+        <option value="$PROJECT_DIR$/css/popup.css" />
+        <option value="$PROJECT_DIR$/css/jquery.mobile.ui.css" />
+        <option value="$PROJECT_DIR$/menus.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="228" />
     <option name="y" value="104" />
     <option name="width" value="1400" />
@@ -139,12 +177,12 @@
             <path>
               <item name="jqm-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="jqm-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jqm-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="jqm-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="popup" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,21 +240,22 @@
       <workItem from="1547954753405" duration="13211000" />
       <workItem from="1552291036704" duration="2556000" />
       <workItem from="1552359814855" duration="7166000" />
-      <workItem from="1552375305708" duration="24763000" />
+      <workItem from="1552375305708" duration="28021000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63137000" />
+    <option name="totallyTimeSpent" value="66395000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32839838" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -292,13 +331,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/jqm-ui-demos.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -315,20 +347,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/fontawesome-free-5.7.2-web/js/all.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/divider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="14" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/badge/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -373,24 +391,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/divider/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/forgetPassword.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="44" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/form/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -476,23 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navbar/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/navbar.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/basic.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -507,37 +494,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.mobile.ui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="689" column="30" lean-forward="true" selection-start-line="689" selection-start-column="30" selection-end-line="689" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/item.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popup/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/popup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding>
-            <element signature="e#2919#11136#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/popup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
@@ -548,10 +504,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.mobile.ui.js">
+    <entry file="file://$PROJECT_DIR$/navbar/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1836">
-          <caret line="108" column="49" lean-forward="true" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
+        <state relative-caret-position="306">
+          <caret line="18" column="48" lean-forward="true" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.mobile.ui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/popup/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/divider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" lean-forward="true" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-442">
+          <caret line="16" column="22" lean-forward="true" selection-end-line="114" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/item.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="7" column="20" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="14" lean-forward="true" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/popup.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-end-line="213" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/divider/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.mobile.ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="469" column="1" lean-forward="true" selection-start-line="469" selection-start-column="1" selection-end-line="469" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="55" column="15" lean-forward="true" selection-start-line="48" selection-start-column="6" selection-end-line="55" selection-end-column="15" />
         </state>
       </provider>
     </entry>
