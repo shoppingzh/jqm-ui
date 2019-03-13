@@ -65,15 +65,12 @@
         return $.modal('confirm', title, text, buttons, opts);
     };
 
-    $.loading = function(operate, opts){
+    $.loading = function(operate, message){
         if(!operate || operate === 'show'){
+            var m = message || '加载中...';
             var $inner = $('<div class="popup-inner loading">')
-                .append(
-                    $('<div class="loading-box">')
-                        .append('<div class="loading-gift g1">')
-                        .append('<div class="loading-gift g2">')
-                        .append('<div class="loading-gift g3">')
-                );
+                .append('<div class="popup-loading-icon"></div>')
+                .append('<div class="loading-msg">' + m + '</div>');
             return $.popup($inner, {
                 dismissible: false,
                 overlay: false,

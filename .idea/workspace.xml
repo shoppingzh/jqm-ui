@@ -3,13 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="4b4e5a07-0f74-48f2-b3f8-d738ea995ac2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/flex.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/item.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jqm-ui-demos.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jqm-ui-demos.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/badge/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/badge/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/button/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/button/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/card/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chip/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chip/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collapsible/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/collapsible/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlgroup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/controlgroup/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile.ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop.html" beforeDir="false" afterPath="$PROJECT_DIR$/desktop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/divider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/divider/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/forgetPassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/examples/forgetPassword.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex布局使用.md" beforeDir="false" afterPath="$PROJECT_DIR$/flex布局使用.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/form/validation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid/cake.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid/cake.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/horizontal-view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/horizontal-view/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.mobile.ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/popup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/listview/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menus.html" beforeDir="false" afterPath="$PROJECT_DIR$/menus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/navbar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/panel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/picker/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/picker/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/popup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/switch/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/switch/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tab/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/tab/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/text/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,104 +44,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menus.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/popup.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/popup.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81702">
-              <caret line="4806" column="1" selection-start-line="4806" selection-start-column="1" selection-end-line="4806" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/form/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1717">
-              <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/item.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="12" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jqm-ui-demos.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/divider.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
-              <folding>
-                <element signature="e#376#1683#2" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/divider/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/forgetPassword.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="44" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,6 +62,7 @@
       <find>Microsoft Y</find>
       <find>listview</find>
       <find>Listview</find>
+      <find>NavBar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,31 +72,50 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/desktop.html" />
-        <option value="$PROJECT_DIR$/popup/index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/popup/index2.html" />
         <option value="$PROJECT_DIR$/examples/chip.html" />
-        <option value="$PROJECT_DIR$/navbar/index.html" />
         <option value="$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js" />
-        <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" />
         <option value="$PROJECT_DIR$/js/form.js" />
-        <option value="$PROJECT_DIR$/form/index.html" />
         <option value="$PROJECT_DIR$/css/form.css" />
-        <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" />
         <option value="$PROJECT_DIR$/css/flex.css" />
         <option value="$PROJECT_DIR$/examples/forgetPassword.html" />
         <option value="$PROJECT_DIR$/css/item.css" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/divider/index.html" />
-        <option value="$PROJECT_DIR$/menus.html" />
         <option value="$PROJECT_DIR$/css/jqm-ui-demos.css" />
         <option value="$PROJECT_DIR$/css/divider.css" />
-        <option value="$PROJECT_DIR$/css/popup.css" />
+        <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" />
+        <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css" />
+        <option value="$PROJECT_DIR$/menus.html" />
+        <option value="$PROJECT_DIR$/button/index.html" />
+        <option value="$PROJECT_DIR$/badge/index.html" />
+        <option value="$PROJECT_DIR$/card/index.html" />
+        <option value="$PROJECT_DIR$/chip/index.html" />
+        <option value="$PROJECT_DIR$/collapsible/index.html" />
+        <option value="$PROJECT_DIR$/controlgroup/index.html" />
+        <option value="$PROJECT_DIR$/divider/index.html" />
+        <option value="$PROJECT_DIR$/form/index.html" />
+        <option value="$PROJECT_DIR$/grid/index.html" />
+        <option value="$PROJECT_DIR$/horizontal-view/index.html" />
+        <option value="$PROJECT_DIR$/listview/index.html" />
+        <option value="$PROJECT_DIR$/panel/index.html" />
+        <option value="$PROJECT_DIR$/picker/index.html" />
+        <option value="$PROJECT_DIR$/switch/index.html" />
+        <option value="$PROJECT_DIR$/tab/index.html" />
+        <option value="$PROJECT_DIR$/text/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/grid/cake.html" />
+        <option value="$PROJECT_DIR$/css/basic.css" />
+        <option value="$PROJECT_DIR$/navbar/index.html" />
+        <option value="$PROJECT_DIR$/css/navbar.css" />
+        <option value="$PROJECT_DIR$/css/jquery.mobile.ui.css" />
         <option value="$PROJECT_DIR$/js/popup.js" />
+        <option value="$PROJECT_DIR$/popup/index.html" />
+        <option value="$PROJECT_DIR$/css/popup.css" />
+        <option value="$PROJECT_DIR$/js/jquery.mobile.ui.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="228" />
     <option name="y" value="104" />
     <option name="width" value="1400" />
@@ -193,12 +139,12 @@
             <path>
               <item name="jqm-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="jqm-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jqm-ui" type="b2602c69:ProjectViewProjectNode" />
               <item name="jqm-ui" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="popup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -218,6 +164,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\jqm-ui\css" />
       <recent name="C:\Users\Administrator\Desktop\jqm-ui\divider" />
       <recent name="C:\Users\Admin\Desktop\jqm-ui\popup" />
       <recent name="C:\Users\Admin\Desktop\jqm-ui\jquery.mobile-1.4.5\demos\css\themes\default" />
@@ -255,16 +202,15 @@
       <workItem from="1547954753405" duration="13211000" />
       <workItem from="1552291036704" duration="2556000" />
       <workItem from="1552359814855" duration="7166000" />
-      <workItem from="1552375305708" duration="3685000" />
+      <workItem from="1552375305708" duration="24763000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42059000" />
+    <option name="totallyTimeSpent" value="63137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -308,68 +254,11 @@
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/popup/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/popup/index2.html" />
     <entry file="file://$PROJECT_DIR$/jquery.mobile-1.4.5/demos/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/badge/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="57" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chip/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="35" column="79" selection-start-line="35" selection-start-column="78" selection-end-line="35" selection-end-column="82" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#4;n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#p#5;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/navbar/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.mobile-1.4.5.ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="105" column="11" lean-forward="true" selection-start-line="57" selection-end-line="105" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -410,24 +299,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.update.css">
+    <entry file="file://$PROJECT_DIR$/css/jqm-ui-demos.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10625">
-          <caret line="625" column="16" selection-start-line="625" selection-start-column="16" selection-end-line="625" selection-end-column="16" />
+        <state relative-caret-position="238">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css">
+    <entry file="file://$PROJECT_DIR$/../fontawesome-free-5.7.2-web/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81702">
-          <caret line="4806" column="1" selection-start-line="4806" selection-start-column="1" selection-end-line="4806" selection-end-column="1" />
+        <state relative-caret-position="-11633">
+          <caret line="52" column="20" lean-forward="true" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/form/index.html">
+    <entry file="file://$PROJECT_DIR$/css/fontawesome-free-5.7.2-web/js/all.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/divider.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1717">
-          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+        <state relative-caret-position="340">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/badge/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/button/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="72" lean-forward="true" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/card/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chip/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#2;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#p#5;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/collapsible/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/divider/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
         </state>
       </provider>
     </entry>
@@ -438,17 +387,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/divider/index.html">
+    <entry file="file://$PROJECT_DIR$/form/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menus.html">
+    <entry file="file://$PROJECT_DIR$/grid/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="5" column="35" lean-forward="true" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/horizontal-view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/listview/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/panel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/picker/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/switch/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tab/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="80" selection-start-line="5" selection-start-column="80" selection-end-line="5" selection-end-column="80" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grid/cake.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controlgroup/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="98" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navbar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/navbar.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/basic.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="4727" column="7" selection-start-line="4727" selection-start-column="7" selection-end-line="4727" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/jquery.mobile.ui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="689" column="30" lean-forward="true" selection-start-line="689" selection-start-column="30" selection-end-line="689" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -459,37 +521,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/jqm-ui-demos.css">
+    <entry file="file://$PROJECT_DIR$/popup/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/divider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
-          <folding>
-            <element signature="e#376#1683#2" expanded="true" />
-          </folding>
+        <state relative-caret-position="421">
+          <caret line="102" column="7" lean-forward="true" selection-start-line="102" selection-start-column="7" selection-end-line="102" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/popup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
+        <state relative-caret-position="251">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="e#2919#11136#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/popup.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" column="50" selection-start-line="59" selection-start-column="50" selection-end-line="59" selection-end-column="50" />
+        <state relative-caret-position="139">
+          <caret line="67" column="37" selection-end-line="235" selection-end-column="11" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.mobile.ui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="49" lean-forward="true" selection-start-line="108" selection-start-column="49" selection-end-line="108" selection-end-column="49" />
         </state>
       </provider>
     </entry>
