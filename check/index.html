@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
+</head>
+<body>
+
+<div data-role="page" data-theme="a">
+    <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+        <div class="nav">
+            <a data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+            <h3 class="nav-title">Check</h3>
+        </div>
+    </div>
+    <div role="main" class="ui-content">
+
+        <div class="demo">
+            <h5>未选中</h5>
+            <div class="z-check"></div>
+            <div class="z-check"></div>
+            <div class="z-check"></div>
+            <div class="z-check"></div>
+            <div class="z-check"></div>
+        </div>
+
+        <div class="demo">
+            <h5>选中</h5>
+            <div class="z-check checked"></div>
+            <div class="z-check checked"></div>
+            <div class="z-check checked"></div>
+            <div class="z-check checked"></div>
+            <div class="z-check checked"></div>
+        </div>
+
+        <div class="demo">
+            <h5>禁用</h5>
+            <div class="z-check disabled"></div>
+            <div class="z-check disabled"></div>
+            <div class="z-check disabled"></div>
+            <div class="z-check disabled"></div>
+            <div class="z-check disabled"></div>
+        </div>
+
+        <div id="checks"></div>
+
+        <button class="ui-btn ui-btn-danger ui-btn-inline ui-btn-sm" onclick="addCheck();">添加一个Check</button>
+
+
+
+    </div>
+</div>
+<script>
+    function addCheck(){
+        var c = $('<div class="z-check"></div>');
+        $('#checks').append(c);
+    }
+</script>
+
+</body>
+</html>

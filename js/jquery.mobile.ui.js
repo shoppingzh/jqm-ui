@@ -341,3 +341,18 @@
 	}
 
 })(jQuery);
+
+
+/*
+ * ==============================================
+ *                    ZCheck
+ * ==============================================
+ */
+;(function($, window, document){
+	$(function(){
+		$(document).on('click', '.z-check:not(".disabled")', function(){
+			$(this).toggleClass('checked').trigger('ZCheckChanged');
+		});
+	});
+
+})(jQuery, window, document);
