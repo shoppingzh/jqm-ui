@@ -711,50 +711,42 @@ p {
 /* Item: flex通用布局 */
 .item-content{
     display: flex;
-    display: -webkit-flex;
-    display: -webkit-box;
     justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -webkit-box-pack: justify;
     align-items: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
     box-sizing: border-box;
+    font-size: 16px;
 }
 .item-content .item-inner{
     overflow: hidden;
     display: flex;
-    display: -webkit-flex;
-    display: -webkit-box;
     justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -webkit-box-pack: justify;
     align-items: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
     box-sizing: border-box;
     width: 100%;
 }
 .item-content .item-title{
-    width: 35%;
     flex-shrink: 1;
-    -webkit-flex-shrink: 1;
-    -ms-flex: 0 1 auto;
+    max-width: 100%;
+    position: relative;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+.item-content .item-title-row{
+    display: flex;
+    justify-content: space-between;
 }
 .item-content .item-media{
     align-self: flex-start;
-    -webkit-align-self: flex-start;
 }
-.item-content .item-input{
-    width: 100%;
-    -webkit-box-flex: 1; /* 所有的.flex-content元素等分flex容器的主轴空间 */
-    flex-shrink: 1; /* 空间不够时自动缩放 */
-    -webkit-flex-shrink: 1;
-}
-.item-content .item-right{
-    flex-shrink: 1;
-    -webkit-flex-shrink: 1;
-    -webkit-box-flex: 1;
+.item-after{
+    display: flex;
+    flex-shrink: 0;
+    white-space: nowrap;
+    /*margin-left: auto;*/
+    font-size: 14px;
 }
 .ui-listview .item-media+.item-inner{
     margin-left: 10px;
@@ -1122,11 +1114,11 @@ p {
 }
 
 
-/* Check */
+/* ZCheck */
 .z-check{
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 4px;
@@ -1142,8 +1134,8 @@ p {
 .z-check.checked::after{
     content: '';
     display: block;
-    width: 20px;
-    height: 8px;
+    width: 16px;
+    height: 6px;
     border-left: 2px solid #3b94e7;
     border-bottom: 2px solid #3b94e7;
     position: absolute;
