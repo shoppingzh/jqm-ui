@@ -117,6 +117,17 @@
 			.append('<div class="popup-support-bottom">');
 	});
 
+	/*
+	* overlay(Boolean)			是否显示遮罩层
+	* position(String)			弹窗位置
+	* offset(Integer)
+	* dismissible(Boolean) 		点击外部是否可关闭
+	* transition(String)   		弹出效果，可选值：fade|pop|flip|turn|flow|slidefade|slide|slideup|slidedown|none
+	* corners(Boolean)			已废弃
+	* shadow(Boolean)			已废弃
+	* stay(Integer)				停留时间
+	* fullWidth(Boolean)		是否占满屏幕的全部宽度
+	* */
 	var defaults = {
 		overlay: true,
 		position: 'window',
@@ -129,8 +140,8 @@
 		stay: 0
 	};
 
-	$.popQueue = []; // popup队列
-	$.activePop = undefined;
+	$.popQueue = []; 			// popup队列
+	$.activePop = undefined; 	// 当前活动的popup
 
 	$.alert = function(title, text, cb){
 		if(text === undefined){
@@ -242,6 +253,20 @@
 		});
 	};
 
+	$.popupMenu = function(options){
+		var $inner = $('<div class="popup-inner popupMenu">');
+		$.each(options.items, function(i, item){
+			$inner.append(
+				$('<div class="menu-item popup-close">').text(item.title).on('click', item.onSelect));
+		});
+		return $.popup($inner, {
+			dismissible: false,
+			position: 'window',
+			fullWidth: false,
+			transition: 'pop'
+		});
+	};
+
 	// 通用modal
 	$.modal = function(type, title, body, buttons, options){
 		options = options || {};
@@ -267,6 +292,7 @@
 		return $.popup($inner, options);
 	};
 
+	// jQuery mobile base popup
 	$.popup = function(inner, options){
 		var opts = $.extend({}, defaults, options);
 		if(opts.position === 'top'){
@@ -338,6 +364,16 @@
 
 	function func(f){
 		return f !== undefined && $.isFunction(f);
+	}
+
+	function handlerAfterHide(inner, f){
+		console.log(inner.parent());
+		$.closePopup(inner.parent()).on('popupafterclose', function(){
+			if(func(f)){
+				f();
+			}
+		});
+
 	}
 
 })(jQuery);

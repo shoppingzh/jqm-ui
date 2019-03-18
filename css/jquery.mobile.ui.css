@@ -733,6 +733,8 @@ p {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
 }
 .item-content .item-title-row{
     display: flex;
@@ -750,6 +752,9 @@ p {
 }
 .ui-listview .item-media+.item-inner{
     margin-left: 10px;
+}
+.ui-listview .item-inner{
+	display: block;
 }
 
 /* Nav */
@@ -818,7 +823,7 @@ p {
 
 /* Popup */
 /*
- * jQuery mobile的popup组件样式更改：
+ * jQuery mobile的popup组件样式修正：
  * 1. 去除popup容器边框与背景色
  * 2. 更改遮罩层的定位方式
  */
@@ -844,7 +849,11 @@ p {
     font-size: 18px;
     min-width: 18em;
 }
-
+.popup-inner.alert,
+.popup-inner.confirm,
+.popup-inner.popupMenu{
+    border-radius: .3em;
+}
 .popup-inner .popup-header{
     text-align: center;
 }
@@ -925,21 +934,13 @@ p {
 .popup-support-bottom{
     bottom: -1px;
 }
-.popup-inner.toast,
-.popup-inner.loading{
-    min-width: 0;
-}
 
 /* Alert & Confirm */
-.popup-inner.alert,
-.popup-inner.confirm{
-    border-radius: .3em;
-}
 .popup-inner.alert .popup-body{
     text-align: center;
 }
 
-/* Loading */
+/* Popup Loading */
 @keyframes loading-animation{
     0%{
         -webkit-transform:rotate3d(0, 0, 1, 0deg);
@@ -962,17 +963,9 @@ p {
 }
 .popup-inner.loading{
     display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
     flex-direction: column;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
     align-items: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
     justify-content: space-around;
-    -webkit-justify-content: space-around;
-    -webkit-box-pack: justify;
     width: 130px;
     height: 60px;
     background-color: #666;
@@ -983,6 +976,7 @@ p {
     text-shadow: none!important;
     font-size: 14px;
     padding: 15px 5px;
+    min-width: 0;
 }
 .popup-inner.loading .popup-loading-icon{
     display: inline-block;
@@ -999,7 +993,7 @@ p {
     text-overflow: ellipsis;
 }
 
-/* Actions and Float menus */
+/* Popup Actions and Float menus */
 .popup-inner.actions,
 .popup-inner.float-menus{
     min-width: 0;
@@ -1029,6 +1023,22 @@ p {
 }
 .popup-inner.actions ul>li.actions-cancel{
     border-top: 12px solid #ddd;
+}
+
+/* Popup Popup menu */
+.popup-inner.popupMenu{
+    font-size: 16px;
+    font-weight: 400;
+}
+.popup-inner.popupMenu .menu-item{
+    padding: .75em 1.25em;
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+.popup-inner.popupMenu .menu-item:not(:last-child){
+    border-bottom: 1px solid #eee;
 }
 
 /* Selector */

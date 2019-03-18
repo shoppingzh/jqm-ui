@@ -4844,20 +4844,6 @@ html head + body .ui-body-a.ui-focus {
 .ui-page-theme-a .ui-flipswitch-active{
 	background-color: #0e90d2;
 }
-
-/* Popup */
-.ui-popup{
-	border: none!important; 
-	border-radius: .35em;
-	background-color: transparent;
-}
-.ui-popup-arrow{
-	background-color: #fff!important; 
-	border: none!important;
-}
-.ui-popup-screen{
-	position: fixed!important;
-}
 /* Tabs */
 .ui-tabs{
 	padding: 0;
