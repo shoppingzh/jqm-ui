@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b4e5a07-0f74-48f2-b3f8-d738ea995ac2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/jquery.mobile.ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/jquery.mobile.ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/jquery.mobile.ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/jquery.mobile.ui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/popup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/popup/index.html" afterDir="false" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/jquery.mobile.ui.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="831" column="21" lean-forward="true" selection-start-line="831" selection-start-column="21" selection-end-line="831" selection-end-column="21" />
+              <caret line="987" column="36" selection-start-line="987" selection-start-column="36" selection-end-line="987" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -31,17 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/jquery.mobile.ui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="259" column="41" lean-forward="true" selection-start-line="259" selection-start-column="41" selection-end-line="259" selection-end-column="41" />
+            <state relative-caret-position="424">
+              <caret line="280" column="19" lean-forward="true" selection-start-line="280" selection-start-column="19" selection-end-line="280" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/popup/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+            <state relative-caret-position="356">
+              <caret line="61" column="68" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -122,13 +120,13 @@
         <option value="$PROJECT_DIR$/flex/index.html" />
         <option value="$PROJECT_DIR$/examples/profile.html" />
         <option value="$PROJECT_DIR$/css/jquery.mobile-1.4.5.min.css" />
+        <option value="$PROJECT_DIR$/popup/index.html" />
         <option value="$PROJECT_DIR$/js/jquery.mobile.ui.js" />
         <option value="$PROJECT_DIR$/css/jquery.mobile.ui.css" />
-        <option value="$PROJECT_DIR$/popup/index.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="228" />
     <option name="y" value="104" />
     <option name="width" value="1400" />
@@ -234,12 +232,12 @@
       <workItem from="1552375305708" duration="35533000" />
       <workItem from="1552535822026" duration="6305000" />
       <workItem from="1552613175878" duration="6211000" />
-      <workItem from="1552906770393" duration="4621000" />
+      <workItem from="1552906770393" duration="6411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91044000" />
+    <option name="totallyTimeSpent" value="92834000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -587,24 +585,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/popup/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="61" column="68" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.mobile.ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="259" column="41" lean-forward="true" selection-start-line="259" selection-start-column="41" selection-end-line="259" selection-end-column="41" />
+        <state relative-caret-position="424">
+          <caret line="280" column="19" lean-forward="true" selection-start-line="280" selection-start-column="19" selection-end-line="280" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.mobile.ui.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
-          <caret line="831" column="21" lean-forward="true" selection-start-line="831" selection-start-column="21" selection-end-line="831" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/popup/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <caret line="987" column="36" selection-start-line="987" selection-start-column="36" selection-end-line="987" selection-end-column="36" />
         </state>
       </provider>
     </entry>

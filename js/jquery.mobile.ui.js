@@ -267,6 +267,24 @@
 		});
 	};
 
+	$.fn.popupMenu = function(){
+		return this.each(function(){
+			var $select = $(this);
+			var items = [];
+			$select.find('option').each(function(){
+				var $opt = $(this);
+				items.push({
+					title: $(this).text(),
+					onSelect: function(){
+						$opt.prop('selected', true).siblings('option').prop('selected', false);
+					}
+				});
+			});
+			$select.hide();
+			$.popupMenu({items: items});
+		});
+	};
+
 	// 通用modal
 	$.modal = function(type, title, body, buttons, options){
 		options = options || {};
