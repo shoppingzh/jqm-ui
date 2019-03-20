@@ -24,6 +24,41 @@
       <div role="main" class="ui-content">
 
         <div class="demo">
+          <h5>一个丰富的表单</h5>
+          <ul data-role="listview" class="form-list">
+            <li>
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title label">中文姓名</div>
+                  <div class="item-input">
+                    <input data-role="none" type="text" placeholder="与证件保持一致">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <select data-role="none" id="s1" class="hide">
+                <option value="0">中国</option>
+                <option value="1">美国</option>
+                <option value="2">德国</option>
+                <option value="3">英国</option>
+                <option value="4">日本</option>
+              </select>
+              <a href="##" onclick="$('#s1').popupMenu();">
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">国籍</div>
+                    <div class="item-input"><span class="grey">请选择</span></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <div class="demo">
           <h5>jqm UI 表单</h5>
           <ul data-role="listview" class="ui-form litt">
             <li class="ui-form-item">

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
   </head>
   <body>
     <div data-role="page">
@@ -19,6 +20,21 @@
         </div>
       </div>
       <div role="main" class="ui-content">
+
+        <div class="demo">
+          <h5>可选列表</h5>
+          <ul data-role="listview" class="select-list multiple">
+            <li class="select-item">刘德华</li>
+            <li class="select-item">张学友</li>
+            <li class="select-item selected">郭富城</li>
+            <li class="select-item">黎明</li>
+            <li class="select-item">李连杰</li>
+            <li class="select-item">甄子丹</li>
+            <li class="select-item">洪金宝</li>
+          </ul>
+          <button type="button" class="ui-btn ui-btn-warning ui-btn-sm ui-corner-all" onclick="showResult();">查看结果</button>
+        </div>
+        <i class="fas fa-check"></i>
 
         <div class="demo">
           <h5>普通列表</h5>
@@ -211,6 +227,12 @@
 
       </div>
     </div>
+
+  <script>
+    function showResult(){
+      $.alert($('.select-list').selectList('getResult'));
+    }
+  </script>
 
   </body>
 </html>

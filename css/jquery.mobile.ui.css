@@ -30,6 +30,10 @@ p {
     color: #dd514c !important;
 }
 
+.hide{
+	display: none!important;
+}
+
 
 /* Corners */
 .ui-corner-lg {
@@ -594,23 +598,23 @@ p {
 
 /* Form */
 /* 使用flex布局实现，flex布局学习请见：https://www.cnblogs.com/xuyuntao/articles/6391728.html */
-.ui-form{
+/*.ui-form{
     font-size: 18px;
 }
 .ui-form .ui-form-item {
     display: flex !important;
     display: -webkit-flex !important;
-    display: -webkit-box !important; /* 布局 */
+    display: -webkit-box !important; !* 布局 *!
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
-    -webkit-box-pack: start; /* 横向排列 */
+    -webkit-box-pack: start; !* 横向排列 *!
     align-items: center;
     -webkit-align-items: center;
-    -webkit-box-align: center; /* 纵向排列 */
+    -webkit-box-align: center; !* 纵向排列 *!
     box-sizing: border-box;
     padding: .2em 1em;
     position: relative;
-    min-height: 1em;
+    min-height: 3em;
 }
 .ui-form .ui-form-item.label-top{
     align-items: flex-start;
@@ -700,12 +704,52 @@ p {
     font-style: normal;
     font-size: 1em;
     color: #f0f0f0;
-    flex-shrink: 0; /* 不收缩 */
+    flex-shrink: 0; !* 不收缩 *!
     margin-left: .35em;
 }
 .ui-form .form-invalid:before{
     content: "\0021";
     display: inline-block;
+}*/
+
+.form-list>li,
+.form-list>li>a{
+    padding: 0!important;
+}
+.form-list .item-content{
+    padding-left: .5em;
+}
+.form-list .item-title.label{
+    width: 35%;
+}
+.form-list .item-input{
+    width: 100%;
+}
+.form-list .item-inner{
+    height: 2.5em;
+    padding: .5em;
+}
+
+.form-list input[type="text"],
+.form-list input[type="password"],
+.form-list input[type="number"],
+.form-list input[type="search"],
+.form-list input[type="email"],
+.form-list input[type="tel"],
+.form-list input[type="url"],
+.form-list input[type="date"],
+.form-list input[type="time"],
+.form-list input[type="file"],
+.form-list textarea,
+.form-list select{
+    border: none;
+    outline: 0;
+    width: 100%;
+    height: 3em;
+    background-color: inherit;
+}
+.form-list .item-inner{
+    display: flex!important;
 }
 
 /* Item: flex通用布局 */
@@ -724,7 +768,7 @@ p {
     box-sizing: border-box;
     width: 100%;
 }
-.item-content .item-title{
+.item-title{
     flex-shrink: 1;
     max-width: 100%;
     position: relative;
@@ -848,6 +892,8 @@ p {
     font-style: normal;
     font-size: 18px;
     min-width: 18em;
+    max-height: 400px;
+    overflow: auto;
 }
 .popup-inner.alert,
 .popup-inner.confirm,
@@ -868,6 +914,10 @@ p {
 .popup-inner .popup-body{
     font-size: 16px;
     padding: 2em 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 .popup-inner .popup-body.no-padding{
     padding: 0!important;
@@ -1024,7 +1074,6 @@ p {
 .popup-inner.actions ul>li.actions-cancel{
     border-top: 12px solid #ddd;
 }
-
 /* Popup Popup menu */
 .popup-inner.popupMenu{
     font-size: 16px;
@@ -1039,6 +1088,27 @@ p {
 }
 .popup-inner.popupMenu .menu-item:not(:last-child){
     border-bottom: 1px solid #eee;
+}
+
+/* Select list */
+.select-list .select-item{
+    position: relative;
+}
+.select-list .select-item.selected::after{
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    color: #3b94e7;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    margin-top: -8px;
 }
 
 /* Selector */
@@ -1122,7 +1192,6 @@ p {
     -webkit-transition: opacity 1s ease;
     transition: opacity 1s ease;
 }
-
 
 /* ZCheck */
 .z-check{

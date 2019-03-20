@@ -1,4 +1,72 @@
 
+/*
+ * ==============================================
+ *              Selectable List
+ * ==============================================
+ */
+(function($){
+
+    $(document).on('click', '.select-list .select-item', function(){
+        var $list = $(this).parents('.select-list');
+        if($list.hasClass('multiple')){
+            $(this).toggleClass('selected');
+        }else{
+            $(this).addClass('selected').siblings('.select-item').removeClass('selected');
+        }
+    });
+
+
+    $.fn.selectList = function(m, options){
+        if(methods[m]){
+            return methods[m].apply(this, Array.prototype.slice.call(arguments, 1));
+        }else if(typeof m === 'object' || !m){
+            return methods.init.apply(this, arguments);
+        }else{
+            throw new Error('没有找到' + m + '方法！');
+        }
+    };
+
+    var methods = {
+        init: function(options){
+            var opts = $.extend({}, $.fn.selectList.defaults, options);
+            return this.each(function(){
+                var $list = $(this);
+                if(!$list.hasClass('select-list')){
+                    $list.addClass('select-list');
+                }
+                $list.find('li').each(function () {
+                    var $li = $(this);
+                    if(!$li.hasClass('select-item')){
+                        $li.addClass('select-item');
+                    }
+                });
+                if(opts.multiple){
+                    $list.addClass('multiple');
+                }else{
+                    $list.removeClass('multiple');
+                }
+            });
+        },
+        getResult: function(){
+           var $list = $(this);
+           var result = [];
+           $list.find('.select-item').each(function () {
+               if($(this).hasClass('selected')){
+                   result.push($(this).index());
+               }
+           });
+           return result;
+        }
+    };
+
+    $.fn.selectList.defaults = {
+        multiple: false
+    };
+
+
+
+})(jQuery);
+
 /* 
  * ==============================================
  *                    Picker
@@ -260,7 +328,7 @@
 				$('<div class="menu-item popup-close">').text(item.title).on('click', item.onSelect));
 		});
 		return $.popup($inner, {
-			dismissible: false,
+			dismissible: true,
 			position: 'window',
 			fullWidth: false,
 			transition: 'pop'
@@ -273,10 +341,14 @@
 			var items = [];
 			$select.find('option').each(function(){
 				var $opt = $(this);
+				if(!$opt.val()){
+					return true;
+				}
 				items.push({
 					title: $(this).text(),
 					onSelect: function(){
 						$opt.prop('selected', true).siblings('option').prop('selected', false);
+						$select.change();
 					}
 				});
 			});

@@ -59,7 +59,7 @@
           <a href="javascript:;" class="link" onclick="popupMenu();">弹出菜单</a>
         </div>
 
-        <select id="select1" data-role="none" class="selectPopupMenu">
+        <select id="select1" data-role="none" class="selectPopupMenu" onchange="alert($(this).find(':selected').text())">
           <option>选项1</option>
           <option>选项2</option>
           <option>选项3</option>
