@@ -739,9 +739,9 @@ p {
     width: 100%;
 }
 .form-list .item-inner{
+    display: flex!important;
     padding: .5em;
 }
-
 .form-list input[type="text"],
 .form-list input[type="password"],
 .form-list input[type="number"],
@@ -760,8 +760,26 @@ p {
     background-color: inherit;
     min-height: 1.5em;
 }
-.form-list .item-inner{
-    display: flex!important;
+.form-list .placeholder{
+    font-size: 14px;
+    color: #666;
+}
+/* placeholder修正*/
+input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #666;
+}
+input::-moz-placeholder{
+    font-size: 14px;
+    color: #666;
+}
+input:-moz-placeholder{
+    font-size: 14px;
+    color: #666;
+}
+input:-ms-input-placeholder{
+    font-size: 14px;
+    color: #666;
 }
 
 /* Item: flex通用布局 */

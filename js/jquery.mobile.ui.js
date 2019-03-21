@@ -153,7 +153,7 @@
             var text = $select.find(':selected').text();
             var $span = $('<span>').text(text || '请选择');
             if(!$select.find(':selected').val()){
-                $span.addClass('grey');
+                $span.addClass('placeholder');
             }
             $select.wrap('<div class="popup-select">').before($span);
         });
@@ -164,7 +164,7 @@
                 var $opt = $(this).find(':selected');
                 $c.find('span').text($opt.text());
                 if($opt.val()){
-                    $c.find('span').removeClass('grey');
+                    $c.find('span').removeClass('placeholder');
                 }
             });
         });
