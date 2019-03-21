@@ -146,6 +146,30 @@
 			$(this).siblings('input,textarea').val('').toggleClear().focus();
 		});
 
+        // select with popup
+        $('.form-list select').each(function(){
+            var $select = $(this);
+            $select.hide();
+            var text = $select.find(':selected').text();
+            var $span = $('<span>').text(text || '请选择');
+            if(!$select.find(':selected').val()){
+                $span.addClass('grey');
+            }
+            $select.wrap('<div class="popup-select">').before($span);
+        });
+
+        $('.form-list a:has(".popup-select")').on('click', function(){
+            var $c = $(this);
+            $c.find('select').popupMenu().on('change', function(){
+                var $opt = $(this).find(':selected');
+                $c.find('span').text($opt.text());
+                if($opt.val()){
+                    $c.find('span').removeClass('grey');
+                }
+            });
+        });
+
+
 	});
 
     $.fn.toggleFocus = function(){
@@ -335,7 +359,7 @@
 		});
 	};
 
-	$.fn.popupMenu = function(){
+	$.fn.popupMenu = function(options){
 		return this.each(function(){
 			var $select = $(this);
 			var items = [];
@@ -356,6 +380,10 @@
 			$.popupMenu({items: items});
 		});
 	};
+
+	$.fn.popupMenu.defaults = {
+	    clear: false
+    };
 
 	// 通用modal
 	$.modal = function(type, title, body, buttons, options){
@@ -454,16 +482,6 @@
 
 	function func(f){
 		return f !== undefined && $.isFunction(f);
-	}
-
-	function handlerAfterHide(inner, f){
-		console.log(inner.parent());
-		$.closePopup(inner.parent()).on('popupafterclose', function(){
-			if(func(f)){
-				f();
-			}
-		});
-
 	}
 
 })(jQuery);
