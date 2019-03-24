@@ -147,7 +147,8 @@
 		});
 
         // select with popup
-        $('.form-list select').each(function(){
+
+        $('select.popup-select').each(function(){
             var $select = $(this);
             $select.hide();
             var text = $select.find(':selected').text();
@@ -155,14 +156,14 @@
             if(!$select.find(':selected').val()){
                 $span.addClass('placeholder');
             }
-            $select.wrap('<div class="popup-select">').before($span);
+            $select.wrap('<div class="popup-select-block">').before($span);
         });
 
-        $('.form-list a:has(".popup-select")').on('click', function(){
+        $('.popup-select-trigger:has(".popup-select-block")').on('click', function(){
             var $c = $(this);
-            $c.find('select').popupMenu().on('change', function(){
+            $c.find('select.popup-select').popupMenu().on('change', function(){
                 var $opt = $(this).find(':selected');
-                $c.find('span').text($opt.text());
+                $c.find('.popup-select-block>span').text($opt.text());
                 if($opt.val()){
                     $c.find('span').removeClass('placeholder');
                 }

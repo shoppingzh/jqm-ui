@@ -12,6 +12,10 @@
 6. 时间轴
 
 7. 单选按钮与开关
+8. 确认提示框的红色按钮设计
+9. selectMenu的已选择设计
+10. 重新设计按钮（脱离jQuery mobile）
+11. 重新设计列表（脱离jQuery mobile）
 
 
 ### Examples

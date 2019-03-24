@@ -712,7 +712,7 @@ p {
     display: inline-block;
 }*/
 
-.form-list>li,
+.form-list>li:not('[data-role="list-divider"]'),
 .form-list>li>a{
     padding: 0!important;
 }
@@ -723,6 +723,7 @@ p {
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
+    flex-shrink: 0;
 }
 .form-list .item-content{
     padding-left: .5em;
@@ -733,7 +734,7 @@ p {
     white-space: nowrap;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
-    width: 40%;
+    width: 35%;
 }
 .form-list .item-input{
     width: 100%;
@@ -751,6 +752,8 @@ p {
 .form-list input[type="url"],
 .form-list input[type="date"],
 .form-list input[type="time"],
+.form-list input[type="datetime"],
+.form-list input[type="datetime-local"],
 .form-list input[type="file"],
 .form-list textarea,
 .form-list select{
@@ -758,7 +761,7 @@ p {
     outline: 0;
     width: 100%;
     background-color: inherit;
-    min-height: 1.5em;
+    min-height: 1.85em;
 }
 .form-list .placeholder{
     font-size: 14px;
@@ -875,6 +878,9 @@ input:-ms-input-placeholder{
     text-overflow: ellipsis;
     color: #fff;
     font-size: inherit;
+}
+.nav .nav-link-list{
+    z-index: 20;
 }
 .nav .nav-link-list .nav-link:not(:last-child){
     margin-right: 10px;
