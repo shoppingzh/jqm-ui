@@ -1,0 +1,46 @@
+/* Item: flex通用布局 */
+.item-content{
+	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: justify;
+	align-items: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	box-sizing: border-box;
+}
+.item-content .item-inner{
+	overflow: hidden;
+	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-webkit-box-pack: justify;
+	align-items: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	box-sizing: border-box;
+	width: 100%;
+}
+.item-title{
+	width: 35%;
+	flex-shrink: 1;
+	-webkit-flex-shrink: 1;
+	-ms-flex: 0 1 auto;
+}
+.item-media{
+	align-self: flex-start;
+	-webkit-align-self: flex-start;
+}
+.item-input{
+	width: 100%;
+	-webkit-box-flex: 1; /* 所有的.flex-content元素等分flex容器的主轴空间 */
+	flex-shrink: 1; /* 空间不够时自动缩放 */
+	-webkit-flex-shrink: 1;
+}
+.ui-listview .item-media+.item-inner{
+	margin-left: 10px;
+}

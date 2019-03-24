@@ -4719,7 +4719,7 @@ html .ui-popup .ui-field-contain > label + .ui-flipswitch {
 /* Update 2019.01.14 */
 /* 全局样式 */
 html{
-	font-family: Microsoft Yahei;
+	font-family: sans-serif;
 }
 body,
 input,
@@ -4728,8 +4728,7 @@ textarea,
 button,
 .ui-btn {
 	font-size: 1em;
-	line-height: 1.3;
-	font-family: Microsoft Yahei;
+	line-height: 1.5;
 }
 .ui-shadow,
 .ui-focus,
@@ -4844,20 +4843,6 @@ html head + body .ui-body-a.ui-focus {
 }
 .ui-page-theme-a .ui-flipswitch-active{
 	background-color: #0e90d2;
-}
-
-/* Popup */
-.ui-popup{
-	border: none!important; 
-	border-radius: .35em;
-	background-color: transparent;
-}
-.ui-popup-arrow{
-	background-color: #fff!important; 
-	border: none!important;
-}
-.ui-popup-screen{
-	position: fixed!important;
 }
 /* Tabs */
 .ui-tabs{

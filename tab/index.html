@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
@@ -13,16 +14,17 @@
 
     <div data-role="page" data-theme="a">
       <div data-role="header" class="navbar" data-position="fixed" data-tap-toggle="false">
-        <a data-ajax="false" href="../menus.html" data-icon="carat-l">返回</a>
-        <h3>Switch</h3>
-        <a data-ajax="false" href="javascript:;" data-icon="info" data-iconpos="right">关于</a>
-        <div data-role="navbar" data-theme="a" data-position="fixed">
-          <ul>
-            <li class="active"><a href="#tab1">Tab 1</a></li>
-            <li><a href="#tab2">Tab 2</a></li>
-            <li><a href="#tab3">Tab 3</a></li>
-          </ul>
-        </div>
+          <div class="nav">
+              <a data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+              <h3 class="nav-title">Tab</h3>
+          </div>
+          <div data-role="navbar" data-theme="a" data-position="fixed">
+              <ul>
+                  <li class="active"><a href="#tab1">Tab 1</a></li>
+                  <li><a href="#tab2">Tab 2</a></li>
+                  <li><a href="#tab3">Tab 3</a></li>
+              </ul>
+          </div>
       </div>
       <div role="main" class="ui-content">
           

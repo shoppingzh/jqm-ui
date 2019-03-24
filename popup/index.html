@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
-    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
-    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.ui.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
   </head>
   <body>
 
     <div data-role="page" data-theme="a" class="ui-noboxshadow">
       <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
-        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
-        <h3>Popup</h3>
-        <a data-ajax="false" href="javascript:;" class="ui-btn floatMenu">菜单</a>
+        <div class="nav">
+          <a data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+          <h3 class="nav-title">Popup</h3>
+          <a data-ajax="false" href="javascript:;" class="nav-link floatMenu">菜单</a>
+        </div>
       </div>
       <div role="main" class="ui-content">
-
         <div class="demo">
           <h5>警示框</h5>
           <a href="javascript:;" class="link" onclick="alert1();">普通警示框</a>
@@ -52,6 +53,26 @@
           <a href="javascript:;" class="link floatMenu">点击打开浮动菜单</a>
         </div>
 
+        <div class="demo">
+          <h5>弹出菜单</h5>
+          <a href="javascript:;" class="link" onclick="popupMenu();">弹出菜单</a>
+        </div>
+
+        <select id="select1" data-role="none" class="selectPopupMenu" onchange="alert($(this).find(':selected').text())">
+          <option>选项1</option>
+          <option>选项2</option>
+          <option>选项3</option>
+          <option>选项4</option>
+        </select>
+
+        <ul data-role="listview">
+          <li>
+            <a href="javascript:;" onclick="popupMenuWithSelect();">
+              <span>选择</span>
+            </a>
+          </li>
+        </ul>
+
       </div>
     </div>
     <script type="text/javascript">
@@ -69,7 +90,12 @@
             ],
           }); 
         });
+
       });
+
+      function popupMenuWithSelect(){
+        $('#select1').popupMenu();
+      }
 
       function alert1(){
         $.alert('输入错误，请重新输入！');
@@ -103,7 +129,7 @@
         $.loading('show');
         setTimeout(function(){
           $.loading('hide');
-        }, 1500);
+        }, 3000);
       }
 
       function actions1(){
@@ -112,6 +138,25 @@
           { text: '检查更新', onClick: function(){ $.alert('您选择了检查更新'); } },
           { text: '退出', onClick: function(){ $.alert('您选择了退出'); } },
         ]); 
+      }
+
+      function popupMenu(){
+        $.popupMenu({
+          items: [
+            {
+              title: '复制',
+              onSelect: function(){
+                $.alert('复制');
+              }
+            },
+            {
+              title: '删除',
+              onSelect: function(){
+                $.alert('删除');
+              }
+            }
+          ]
+        });
       }
 
     </script>
