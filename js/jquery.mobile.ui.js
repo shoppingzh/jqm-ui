@@ -349,8 +349,11 @@
 	$.popupMenu = function(options){
 		var $inner = $('<div class="popup-inner popupMenu">');
 		$.each(options.items, function(i, item){
-			$inner.append(
-				$('<div class="menu-item popup-close">').text(item.title).on('click', item.onSelect));
+			var $item = $('<div class="menu-item popup-close">').text(item.title).on('click', item.onSelect);
+			if(item.selected){
+				$item.addClass('selected');
+			}
+			$inner.append($item);
 		});
 		return $.popup($inner, {
 			dismissible: true,
@@ -370,7 +373,8 @@
 					return true;
 				}
 				items.push({
-					title: $(this).text(),
+					title: $opt.text(),
+					selected: $opt.is(':selected'),
 					onSelect: function(){
 						$opt.prop('selected', true).siblings('option').prop('selected', false);
 						$select.change();

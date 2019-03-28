@@ -8,6 +8,9 @@ p {
 }
 
 /* Colors */
+.mc{
+    color: #58b8d0 !important;
+}
 .grey{
     color: #666 !important;
 }
@@ -1121,9 +1124,24 @@ input:-ms-input-placeholder{
     overflow: hidden;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
+    position: relative;
 }
 .popup-inner.popupMenu .menu-item:not(:last-child){
     border-bottom: 1px solid #eee;
+}
+.popup-inner.popupMenu .menu-item.selected:after{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 8px;
+    border: 1px solid #3b94e7;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-40deg);
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    margin-top: -5px;
 }
 
 /* Select list */
@@ -1131,20 +1149,18 @@ input:-ms-input-placeholder{
     position: relative;
 }
 .select-list .select-item.selected::after{
-    content: "\f00c";
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 600;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    color: #3b94e7;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 8px;
+    border: 2px solid #3b94e7;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-40deg);
     position: absolute;
     right: 1em;
     top: 50%;
-    margin-top: -8px;
+    margin-top: -5px;
 }
 
 /* Selector */
