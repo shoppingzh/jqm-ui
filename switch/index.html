@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
   </head>
   <body>
 
@@ -21,36 +22,18 @@
       </div>
       <div role="main" class="ui-content">
 
-        <div class="demo">
-          <h5>Switch(with checkbox)</h5>
-          <input type="checkbox" data-role="flipswitch">
-        </div>
+        <div class="switch-box">
 
-        <div class="demo">
-          <h5>Switch(with select)</h5>
-          <select data-role="flipswitch">
-            <option>A</option>
-            <option>B</option>
-          </select>
         </div>
-
-        <div class="demo">
-          <h5>Mini switch</h5>
-          <select data-role="flipswitch" data-mini="true">
-            <option>On</option>
-            <option>Off</option>
-          </select>
-        </div>
-
-        <div class="demo">
-          <h5>Disabled switch</h5>
-          <input type="checkbox" data-role="flipswitch" disabled checked>
-          <input type="checkbox" data-role="flipswitch" disabled>
-        </div>
-
 
       </div>
     </div>
+    
+    <script>
+      $('.switch-box').on('click', function(){
+        $(this).toggleClass('on');
+      });
+    </script>
 
   </body>
 </html>

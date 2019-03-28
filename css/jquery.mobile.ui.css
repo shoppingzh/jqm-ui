@@ -1132,8 +1132,8 @@ input:-ms-input-placeholder{
 .popup-inner.popupMenu .menu-item.selected:after{
     content: "";
     display: block;
-    width: 16px;
-    height: 8px;
+    width: 12px;
+    height: 5px;
     border: 1px solid #3b94e7;
     border-top: none;
     border-right: none;
@@ -1275,4 +1275,36 @@ input:-ms-input-placeholder{
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
+}
+
+/* Radio */
+.switch-box{
+    width: 70px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    position: relative;
+    transition: background .3s;
+}
+.switch-box.on{
+    border-color: transparent;
+    background-color: #3b94e7;
+    transition: background .3s;
+}
+.switch-box::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: transform .3s;
+}
+.switch-box.on::after{
+    transform: translateX(30px);
+    transition: transform .3s;
 }
