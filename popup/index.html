@@ -62,17 +62,15 @@
           <a href="javascript:;" class="link" onclick="popupMenu();">弹出菜单</a>
         </div>
 
-        <select id="select1" data-role="none" class="selectPopupMenu hide">
-          <option>选项1</option>
-          <option>选项2</option>
-          <option>选项3</option>
-          <option>选项4</option>
-        </select>
-
         <ul data-role="listview">
           <li>
-            <a href="javascript:;" onclick="popupMenuWithSelect();">
-              <span>选择</span>
+            <a href="javascript:;" class="popup-select-trigger">
+              <select id="select1" data-role="none" class="popup-select">
+                <option>选项1</option>
+                <option>选项2</option>
+                <option>选项3</option>
+                <option>选项4</option>
+              </select>
             </a>
           </li>
         </ul>

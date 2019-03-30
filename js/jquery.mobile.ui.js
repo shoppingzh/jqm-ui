@@ -168,7 +168,31 @@
                     $c.find('span').removeClass('placeholder');
                 }
             });
-        });
+		});
+
+		// Popup select
+		$.fn.popupMenu = function(options){
+			return this.each(function(){
+				var $select = $(this);
+				var items = [];
+				$select.find('option').each(function(){
+					var $opt = $(this);
+					if(!$opt.val()){
+						return true;
+					}
+					items.push({
+						title: $opt.text(),
+						selected: $opt.is(':selected'),
+						onSelect: function(){
+							$opt.prop('selected', true).siblings('option').prop('selected', false);
+							$select.change();
+						}
+					});
+				});
+				$select.hide();
+				$.popupMenu({items: items});
+			});
+		};
 
 
 	});
@@ -268,7 +292,7 @@
 		}
 		var buttons = [
 			{ text: '取消', close: true },
-			{ text: '确认', close: true, onClick: cb }
+			{ text: '确认', close: true, onClick: cb}
 		];
 		var opts = {
 			dismissible: false
@@ -363,33 +387,6 @@
 		});
 	};
 
-	$.fn.popupMenu = function(options){
-		return this.each(function(){
-			var $select = $(this);
-			var items = [];
-			$select.find('option').each(function(){
-				var $opt = $(this);
-				if(!$opt.val()){
-					return true;
-				}
-				items.push({
-					title: $opt.text(),
-					selected: $opt.is(':selected'),
-					onSelect: function(){
-						$opt.prop('selected', true).siblings('option').prop('selected', false);
-						$select.change();
-					}
-				});
-			});
-			$select.hide();
-			$.popupMenu({items: items});
-		});
-	};
-
-	$.fn.popupMenu.defaults = {
-	    clear: false
-    };
-
 	// 通用modal
 	$.modal = function(type, title, body, buttons, options){
 		options = options || {};
@@ -404,11 +401,10 @@
 		if(buttons && buttons.length > 0){
 			var $buttons = $('<div class="popup-buttons">');
 			$.each(buttons, function(i, btn){
-				$buttons.append(
-					$('<span>').text(btn.text)
-						.addClass(btn.close ? 'popup-button popup-close' : 'popup-button')
-						.one('click', btn.onClick)
-				);
+				var $btn = $('<span class="popup-button">').text(btn.text);
+				if(btn.close){ $btn.addClass('popup-close'); } // 是否触发关闭
+				if(btn.warning){ $btn.addClass('red'); } // 是否是警告动作，按钮将标红
+				$buttons.append( $btn.one('click', btn.onClick) );
 			});
 			$inner.append($buttons);
 		}
@@ -506,3 +502,19 @@
 		});
 	});
 })(jQuery, window, document);
+
+
+/*
+ * ==============================================
+ *                    Switch
+ * ==============================================
+ */
+;(function($){
+
+	$.fn.switch = function(){
+		return this.each(function(){
+			
+		});
+	};
+
+})(jQuery);
