@@ -22,13 +22,13 @@
   <body>
 
     <div data-role="page" data-theme="a">
-      <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
-        <div class="nav">
-          <a data-ajax="false" href="javascript:;" data-rel="back" 
-             class="nav-link"><i class="fas fa-chevron-left"></i> 返回</a>
-          <h3 class="nav-title">New Button</h3>
-        </div>
-      </div>
+        <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+            <div class="nav">
+              <a data-ajax="false" href="javascript:;" data-rel="back" 
+                 class="nav-link"><i class="fas fa-chevron-left"></i> 返回</a>
+              <h3 class="nav-title">New Button</h3>
+            </div>
+          </div>
       <div role="main" class="ui-content">
         
         <div class="demo">
@@ -102,15 +102,36 @@
         <div class="demo">
           <h5>按钮大小</h5>
           <div>
-            <button data-role="none" class="btn btn-fill blue" type="button">Button</button>
-            <a data-role="none" class="btn btn-hollow btn-md red">Button</a>
-            <a data-role="none" class="btn btn-fill btn-lg green">Large Button</a>
+            <button data-role="none" class="btn btn-fill blue" type="button">普通按钮</button>
+            <a data-role="none" class="btn btn-hollow btn-md red">中等按钮</a>
+            <a data-role="none" class="btn btn-hollow btn-lg green">这是大按钮</a>
           </div>
         </div>
+
+        <div class="demo">
+          <h5>带图标的按钮</h5>
+          <div>
+            <button data-role="none" class="btn btn-fill blue" type="button"><i class="fas fa-plus"></i> 添加</button>
+            <a data-role="none" class="btn btn-fill green"><i class="fas fa-spinner"></i> 提交中</a>
+            <a data-role="none" class="btn btn-fill red"><i class="fas fa-trash"></i> 删除</a>
+          </div>
+        </div>
+
+        <div class="demo">
+          <h5>按钮禁用</h5>
+          <button data-role="none" class="btn blue disabled" onclick="alert(1);">Button</button>
+          <button data-role="none" class="btn btn-hollow yellow disabled" onclick="alert(1);">Button</button>
+          <button data-role="none" class="btn btn-fill red disabled" onclick="alert(1);">Button</button>
+          <button data-role="none" class="btn btn-fill btn-block btn-md blue disabled" onclick="alert(1);"><i class="fas fa-spinner"></i> 提交中</button>
+        </div>
+
+        <div class="demo">
+          <h5>无圆角按钮</h5>
+          <button data-role="none" class="btn blue btn-hollow btn-md btn-square">Button</button>
+          <button data-role="none" class="btn red btn-fill btn-md btn-square">Button</button>
+        </div>
+
       </div>
-
-      
-
 
     </div>
 

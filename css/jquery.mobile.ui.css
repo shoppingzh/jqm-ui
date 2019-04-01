@@ -4,16 +4,8 @@
     src: url('fonts/Roboto-Regular.ttf');
 } 
 
-html, body, .btn, .ui-btn{
-    font-family: 'Roboto';
-}
-.no-shadow {
-    box-shadow: none !important;
-}
-
-p {
-    margin: 1em 0;
-}
+html, body, .btn, .ui-btn{ font-family: 'Roboto'; }
+p { margin: 1em 0; }
 
 /* Colors 蓝/黄/红/混合色/黑白灰 */
 .blue{ color: #2196f3!important; }
@@ -31,7 +23,6 @@ p {
 .grey{ color: #8e8e93!important; }
 .lightgrey{ color: #9e9e9e!important; }
 .black{ color: #000000!important; }
-
 
 .hide{ display: none!important; }
 
@@ -1273,12 +1264,13 @@ input:-ms-input-placeholder{
     -ms-transform: rotate(-45deg);
 }
 
-/* Radio */
+/* Switch */
 .switch-box{
     display: inline-block;
     width: 70px;
     height: 40px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
+    border-left: none;
     border-radius: 25px;
     position: relative;
     transition: background .3s;
@@ -1312,6 +1304,7 @@ input:-ms-input-placeholder{
     border: 1px solid #ccc;
     background-color: #fff;
     transition: transform .3s;
+    box-shadow: 1px 0 2px #ccc;
 }
 .switch-box.on::after{
     transform: translateX(30px);
@@ -1328,7 +1321,7 @@ input:-ms-input-placeholder{
     border: none;
     box-shadow: none;
     margin: 0;
-    padding: 6px 12px;
+    padding: 6px 10px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500!important;
@@ -1347,9 +1340,7 @@ input:-ms-input-placeholder{
 .btn.btn-block{ width: 100%; }
 .btn:active{ background-color: #eee; transition: all .3s; }
 .btn.btn-hollow,
-.btn.btn-fill{
-    border-radius: 3px;
-}
+.btn.btn-fill{ border-radius: 3px; }
 
 .btn.btn-hollow{ border: 1px solid transparent; }
 .btn.btn-hollow.blue{ border-color: #2196f3; }
@@ -1404,5 +1395,7 @@ input:-ms-input-placeholder{
 .btn.btn-fill.grey:active{ background-color: #79797f; }
 .btn.btn-fill.black:active{ background-color: #000000; }
 
-.btn.btn-md{ padding: 10px 16px; }
-.btn.btn-lg{ font-size: 18px; padding: 12px 18px; }
+.btn.btn-md{ padding: 10px 16px; border-radius: 5px; }
+.btn.btn-lg{ font-size: 18px; padding: 12px 24px; border-radius: 6px; }
+.btn.disabled{ pointer-events: none; opacity: .75; }
+.btn.btn-square{ border-radius: 0; }
