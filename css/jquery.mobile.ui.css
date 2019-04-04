@@ -1,4 +1,4 @@
-/* Global,Basic */
+﻿/* Global,Basic */
 @font-face {
     font-family: 'Roboto';
     src: url('fonts/Roboto-Regular.ttf');
@@ -1321,7 +1321,7 @@ input:-ms-input-placeholder{
     border: none;
     box-shadow: none;
     margin: 0;
-    padding: 6px 10px;
+    padding: 5px 8px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500!important;
@@ -1337,7 +1337,7 @@ input:-ms-input-placeholder{
     user-select: none;
     vertical-align: middle;
 }
-.btn.btn-block{ width: 100%; }
+.btn.btn-block{ width: 100%; padding-left: 0; padding: right: 0; }
 .btn:active{ background-color: #eee; transition: all .3s; }
 .btn.btn-hollow,
 .btn.btn-fill{ border-radius: 3px; }
@@ -1395,7 +1395,61 @@ input:-ms-input-placeholder{
 .btn.btn-fill.grey:active{ background-color: #79797f; }
 .btn.btn-fill.black:active{ background-color: #000000; }
 
+.btn.btn-sm{ padding: 4px 6px; border-radius: 2px; line-height: 1.1;}
 .btn.btn-md{ padding: 10px 16px; border-radius: 5px; }
 .btn.btn-lg{ font-size: 18px; padding: 12px 24px; border-radius: 6px; }
 .btn.disabled{ pointer-events: none; opacity: .75; }
 .btn.btn-square{ border-radius: 0; }
+
+/* Tab */
+.tab-list{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.tab-list .tab-item{
+    list-style: none;
+    display: inline-block;
+    padding: 0 16px;
+    position: relative;
+    transition: all .3s;
+}
+.tab-list::after{
+    content: "";
+    clear: both;
+}
+.tab-list a, .tab-list a:hover, .tab-list a:active, .tab-list a:visited{
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 32px;
+    color: #333;
+    font-size: 16px;
+    line-height: 38px;
+}
+.tab-list .tab-item a:after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -15px;
+    transition: all .3s;
+}
+.tab-list .tab-item.active a::after{
+    content: "";
+    background-color: #ff3b30;
+    transition: all .3s;
+}
+.tab-list .tab-item:active{ background-color: #eee; }
+.tab-list .tab-item.active a{
+    color: #ff3b30;
+    
+}
