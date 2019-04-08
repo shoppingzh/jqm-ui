@@ -254,7 +254,8 @@
 		corners: false,
 		shadow: false,
 		fullWidth: false,
-		stay: 0
+		stay: 0,
+		history: false
 	};
 
 	$.popQueue = []; 			// popup队列
@@ -454,7 +455,8 @@
 			corners: opts.corners,
 			tolerance: opts.tolerance,
 			shadow: opts.shadow,
-			arrow: opts.arrow
+			arrow: opts.arrow,
+			history: opts.history
 		});
 		if(opts.fullWidth){
 			$popup.parent().css({ left: 0, right: 0 });
