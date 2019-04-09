@@ -313,7 +313,9 @@
 				position: 'window'
 			});
 		} else {
-			return $.closePopup($('.popup-inner.loading').parents('.ui-popup'));
+			setTimeout(function(){
+				$.closePopup($('.popup-inner.loading').parents('.ui-popup'));
+			}, 50);
 		}
 	};
 
@@ -446,7 +448,7 @@
 			}
 		});
 
-		// Create and open
+		// Create
 		$popup.popup({
 			overlayTheme: opts.overlay ? 'b' : undefined,
 			positionTo: opts.position,
@@ -465,6 +467,7 @@
 			$.closePopup($popup);
 		});
 
+		// Open
 		$.popQueue.push(function(){ return $.openPopup($popup, opts); });
 		if(!$.activePop){ return $.popQueue.shift()(); }
 		return $popup;
