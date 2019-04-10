@@ -11,6 +11,27 @@
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
     <script type="text/javascript" src="../js/bscroll.js"></script>
+    <style>
+      .slide{
+
+      }
+      .slide .slide-group{
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      .slide .slide-item{
+        float: left;
+      }
+      .slide-item img{
+        width: 100%;
+      }
+      .slide .slide-group::after{
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
   </head>
   <body>
 
@@ -23,10 +44,54 @@
       </div>
       <div role="main" class="">
 
-        
+        <div class="slide" style="width: 100%;">
+          <div class="slide-group">
+            <div class="slide-item">
+                <img src="../images/slide1.jpg">
+            </div>
+            <div class="slide-item">
+              <img src="../images/slide2.jpg">
+            </div>
+            <div class="slide-item">
+              <img src="../images/slide3.jpg">
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
+
+    <script type="text/javascript">
+      $(function(){
+        $('.slide').each(function(){
+          var $slide = $(this),
+              width = $slide.width(),
+              $group = $slide.find('.slide-group'),
+              $items = $group.find('.slide-item');
+          $group.css('width', width * $items.length);
+          $items.css('width', width);
+
+          var bScroll = new BScroll(this, {
+              scrollX: true,
+              scrollY: false,
+              bounce: true,
+              snap: {
+                loop: false,
+                showDot: true,
+                autoPlay: false,
+                
+                speed: 600,
+                threshold: 0.3,
+                stepX: width,
+              }
+          });
+
+        });
+      });
+      
+      
+      
+    </script>
 
   </body>
 </html>
