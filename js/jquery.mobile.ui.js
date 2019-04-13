@@ -523,3 +523,36 @@
 	};
 
 })(jQuery);
+
+/*
+ * ==============================================
+ *                    Load
+ * ==============================================
+ */
+;(function($){
+
+	$.fn.ajaxLoad = function(url, options){
+		var opts = $.extend(true, {}, $.fn.ajaxLoad.defaults, options);
+		return this.each(function(){
+			var $wrapper = $(this);
+			$.ajax({
+				url: url,
+				type: 'GET',
+				data: opts.data,
+				complete: function(){},
+				success: function(html){
+					
+				},
+				error: function(){
+
+				}
+			});
+		});
+	};
+
+	$.fn.ajaxLoad.defaults = {
+		append: false,
+		data: {}
+	};
+
+})(jQuery);

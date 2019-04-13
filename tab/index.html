@@ -19,42 +19,79 @@
               <a data-role="none" data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
               <h3 class="nav-title">Tab</h3>
           </div>
-          
+          <ul class="tab-list">
+            <li class="tab-item"><a data-role="none" href="javascript:;">推荐</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">LOOK直播</a></li>
+            <li class="tab-item active"><a data-role="none" href="javascript:;">解忧电话亭</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">兄弟</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">广场</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">现场</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">翻唱</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">MV</a></li>
+          </ul>
       </div>
       <div role="main" class="ui-content">
           
-        <div class="demo">
-          <h5>风格1</h5>
-          <div>
-            <div class="wrapper1">
-              <div>
-
-                  <ul class="tab-list" style="width: 400px;">
-                      <li class="tab-item"><a data-role="none" href="javascript:;">推荐</a></li>
-                      <li class="tab-item"><a data-role="none" href="javascript:;">LOOK直播</a></li>
-                      <li class="tab-item active"><a data-role="none" href="javascript:;">解忧电话亭</a></li>
-                      <li class="tab-item"><a data-role="none" href="javascript:;">兄弟</a></li>
-                      <li class="tab-item"><a data-role="none" href="javascript:;">广场</a></li>
-                      <li class="tab-item"><a data-role="none" href="javascript:;">现场</a></li>
-                      <li class="tab-item"><a data-role="none" href="javascript:;">翻唱</a></li>
-                      <li class="tab-item"><a data-role="none" href="javascript:;">MV</a></li>
-                    </ul>
-              </div>
-              
-            </div>
-          </div>
-          
+        <div id="pages">
+          <div id="page1"></div>
+          <div id="page2"></div>
+          <div id="page3"></div>
         </div>
+        
+      </div>
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false">
         
       </div>
     </div>
 
     <script type="text/javascript">
-      let scroll = new BScroll('.wrapper1', {
-        scrollX: true,
-        scrollY: false,
-        click: true
+      $(function(){
+        
+        $('#pages>div').each(function(){
+          //var $p = $(this);
+          //$p.load('pages/'+ $p.attr('id') +'.html');
+        });
+
+        $('#pages').wrap($('<div class="slide">').css('width', '100%'))
+          .addClass('slide-group')
+          .find('>div').addClass('slide-item');
+
+        $('.slide').each(function(){
+          var $slide = $(this),
+              width = $slide.width(),
+              $group = $slide.find('.slide-group'),
+              $items = $group.find('.slide-item');
+          $group.css('width', width * $items.length);
+          $items.css('width', width);
+
+          var bScroll = new BScroll(this, {
+              scrollX: true,
+              scrollY: false,
+              eventPassthrough: 'vertical',
+              bounce: false,
+              snap: {
+                loop: false,
+                showDot: true,
+                autoPlay: false,
+                
+                speed: 600,
+                threshold: 5,
+                stepX: width,
+              }
+          });
+
+          $('.prev').on('click', function(){
+            bScroll.prev();
+          });
+          $('.next').on('click', function(){
+            bScroll.next();
+          });
+
+        });
       });
+
+
+     
       $('.tab-list .tab-item').on('click', function(){
         $(this).addClass('active').siblings('.tab-item').removeClass('active');
       });
