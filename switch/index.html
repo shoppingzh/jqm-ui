@@ -16,7 +16,7 @@
     <div data-role="page" data-theme="a">
       <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
         <div class="nav">
-          <a data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+          <a data-ajax="false" href="../menus.html" class="nav-link back">首页</a>
           <h3 class="nav-title">Switch</h3>
         </div>
       </div>
@@ -26,31 +26,31 @@
           <li>
             <div class="item-content">
               <div class="item-inner">开关</div>
-              <div class="item-after"><div class="switch-box on"></div></div>
+              <div class="item-after"><input data-role="none" type="checkbox" class="switch on"></div>
             </div>
           </li>
           <li>
             <div class="item-content">
               <div class="item-inner">开关(红色)</div>
-              <div class="item-after"><div class="switch-box switch-box-red on"></div></div>
+              <div class="item-after"><div class="switch switch-red on"></div></div>
             </div>
           </li>
           <li>
             <div class="item-content">
               <div class="item-inner">开关(绿色)</div>
-              <div class="item-after"><div class="switch-box switch-box-green"></div></div>
+              <div class="item-after"><div class="switch switch-green"></div></div>
             </div>
           </li>
           <li>
             <div class="item-content">
               <div class="item-inner">开关(黄色)</div>
-              <div class="item-after"><div class="switch-box switch-box-yellow"></div></div>
+              <div class="item-after"><div class="switch switch-yellow"></div></div>
             </div>
           </li>
           <li>
             <div class="item-content">
               <div class="item-inner">开关(粉色)</div>
-              <div class="item-after"><div class="switch-box switch-box-pink"></div></div>
+              <div class="item-after"><div class="switch switch-pink"></div></div>
             </div>
           </li>
         </ul>
@@ -58,11 +58,7 @@
       </div>
     </div>
     
-    <script>
-      $('.switch-box').on('click', function(){
-        $(this).toggleClass('on');
-      });
-    </script>
+    
 
   </body>
 </html>

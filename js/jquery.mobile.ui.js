@@ -516,6 +516,12 @@
  */
 ;(function($){
 
+	$(function(){
+		$(document).on('click', '.switch', function(){
+			$(this).toggleClass('on');
+		});
+	});
+
 	$.fn.switch = function(){
 		return this.each(function(){
 			
