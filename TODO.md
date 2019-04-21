@@ -16,7 +16,8 @@
 10. 重新设计按钮（脱离jQuery mobile）  √
 11. 重新设计列表（脱离jQuery mobile）
 12. 按钮组（button group）
-13. 页面加载中设计
+13. 页面加载中设计  √
+14. Card组件重构
 
 
 ### Examples
