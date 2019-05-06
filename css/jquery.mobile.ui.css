@@ -6,6 +6,7 @@
 
 html, body, .btn, .ui-btn{ font-family: 'Roboto'; }
 p { margin: 1em 0; }
+.page-content{ background-color: #efeef3!important; }
 
 /* Text */
 .text-left{ text-align: left; }
@@ -669,55 +670,6 @@ input:-ms-input-placeholder{
     color: #666;
 }
 
-/* Item: flex通用布局 */
-.item-content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    font-size: 16px;
-}
-.item-content .item-inner{
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    width: 100%;
-}
-.item-title{
-    flex-shrink: 1;
-    max-width: 100%;
-    position: relative;
-    -ms-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    font-size: 16px;
-    font-weight: 400;
-    margin: 0;
-	overflow: hidden;
-	white-space: nowrap;
-}
-.item-content .item-title-row{
-    display: flex;
-    justify-content: space-between;
-}
-.item-content .item-media{
-    align-self: flex-start;
-}
-.item-after{
-    display: flex;
-    flex-shrink: 0;
-    white-space: nowrap;
-    /*margin-left: auto;*/
-    font-size: 14px;
-}
-.ui-listview .item-media+.item-inner{
-    margin-left: 10px;
-}
-.ui-listview .item-inner{
-	display: block;
-}
-
 /* Nav */
 /*
  * 对jQuery mobile的修正
@@ -1335,16 +1287,25 @@ input:-ms-input-placeholder{
 .grids .grid-label{ font-size: 12px; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 0 5px; margin-top: 5px; }
 .grid .badge{ position: absolute; top: 5px; right: 5px; padding: 3px 5px;}
 
+/* Item: flex通用布局 */
+.item-content{ display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; font-size: 16px; }
+.item-content .item-inner{ overflow: hidden; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box; width: 100%; position: relative; }
+.item-title{ flex-shrink: 1; max-width: 100%; position: relative; -ms-text-overflow: ellipsis; text-overflow: ellipsis; font-size: 16px; font-weight: 400; margin: 0; overflow: hidden; white-space: nowrap; }
+.item-content .item-title-row{ display: flex; justify-content: space-between; }
+.item-content .item-media{ align-self: center; }
+.item-after{ display: flex; flex-shrink: 0; white-space: nowrap; /*margin-left: auto;*/ font-size: 14px; }
+.ui-listview .item-media+.item-inner{ margin-left: 10px; }
+.ui-listview .item-inner{ display: block; }
+
 /* List */
-.list{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-    position: relative;
-}
+.list{ list-style: none; margin: 0; padding: 0; background-color: #fff; position: relative; }
 .list::before{ content: ""; display: block; box-sizing: border-box; position: absolute; left: 0; top: 0; width: 100%; height: 1px; background-color: #ddd; transform: scaleY(0.5); -webkit-transform: scaleY(0.5); transform-origin: 50% 100;}
 .list::after{ content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: #ddd; transform: scaleY(0.5); -webkit-transform: scaleY(0.5); transform-origin: 50% 100%; }
-.list>li{ padding: 10px 0 10px 15px; position: relative; box-sizing: border-box;}
-.list>li:not(:last-child)::after{ content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: #ddd; transform: scaleY(0.5); -webkit-transform: scaleY(0.5); transform-origin: 50% 100; }
 
+/* .list>li:not(:last-child)::after{ content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: #ddd; transform: scaleY(0.5); -webkit-transform: scaleY(0.5); transform-origin: 50% 100; } */
+.list .item-content{ padding-left: 15px; }
+.list .item-inner{ padding: 10px 10px 10px 0; margin-left: 15px; }
+.list .item-inner::after{ content: ""; display: block; position: absolute; left: 0; bottom: 0; width: 100%; height: 1px; background-color: #ddd; transform: scaleY(.5); -webkit-transform: scaleY(.5); transform-origin: 50% 100%; }
+.list>li>a{ box-sizing: border-box; position: relative; -webkit-appearance: none; text-decoration: none; font-weight: normal; color: #333;}
+.list>li>a.item-content .item-inner::before{ content: ""; display: block; position: absolute; right: 12px; top: 50%; width: 6px; height: 6px; border-right: 1px solid #111; border-bottom: 1px solid #111; transform: rotate(-45deg);}
+.list>li>a.item-content:active{ background-color: #c1c1c1; }
