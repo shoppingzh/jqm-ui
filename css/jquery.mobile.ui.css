@@ -1268,10 +1268,10 @@ input:-ms-input-placeholder{
 .tab-bar .bar-item.new::after{ content: ""; display: block; font-size: 10px; line-height: 1; color: #fff; border-radius: 20px; min-width: 8px; min-height: 8px; background-color: #ff3b30; position: absolute; top: 0; right: 5px; }
 
 /* Slide */
-.slide{ overflow: hidden; }
+/* .slide{ overflow: hidden; }
 .slide .slide-group{ position: relative; white-space: nowrap; overflow: hidden; }
 .slide .slide-group .slide-item{ float: left; white-space: normal; }
-.slide .slide-group::after{ content: ""; display: table; clear: both; }
+.slide .slide-group::after{ content: ""; display: table; clear: both; } */
 
 /* Grid */
 .grids{ position: relative; overflow: hidden; }
@@ -1309,3 +1309,15 @@ input:-ms-input-placeholder{
 .list>li>a{ box-sizing: border-box; position: relative; -webkit-appearance: none; text-decoration: none; font-weight: normal; color: #333;}
 .list>li>a.item-content .item-inner::before{ content: ""; display: block; position: absolute; right: 12px; top: 50%; width: 6px; height: 6px; border-right: 1px solid #111; border-bottom: 1px solid #111; transform: rotate(-45deg);}
 .list>li>a.item-content:active{ background-color: #c1c1c1; }
+
+
+.tab-pages{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+.tab-pages .tab-page{
+    width: 100%;
+    flex-shrink: 0;
+}
