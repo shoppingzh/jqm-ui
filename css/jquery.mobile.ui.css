@@ -7,6 +7,7 @@
 html, body, .btn, .ui-btn{ font-family: 'Roboto'; }
 p { margin: 1em 0; }
 .page-content{ background-color: #efeef3!important; }
+div{ box-sizing: border-box; }
 
 /* Text */
 .text-left{ text-align: left; }
@@ -1310,14 +1311,10 @@ input:-ms-input-placeholder{
 .list>li>a.item-content .item-inner::before{ content: ""; display: block; position: absolute; right: 12px; top: 50%; width: 6px; height: 6px; border-right: 1px solid #111; border-bottom: 1px solid #111; transform: rotate(-45deg);}
 .list>li>a.item-content:active{ background-color: #c1c1c1; }
 
+/* Slide(better scroll support) */
+.sldie{ box-sizing: border-box; overflow: hidden; position: relative; height: 100%;}
+.slide .slide-group{ display: flex; flex-direction: row; position: relative; overflow: hidden; height: 100%; box-sizing: border-box; }
+.slide-group .slide-item{ box-sizing: border-box; position: relative; flex: 0 0 auto; }
 
-.tab-pages{
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-
-}
-.tab-pages .tab-page{
-    width: 100%;
-    flex-shrink: 0;
-}
+.scroll-wrapper{ position: relative; overflow: hidden; }
+.scroll-wrapper .scroll-content{ position: relative; }

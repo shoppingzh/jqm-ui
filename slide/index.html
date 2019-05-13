@@ -11,27 +11,6 @@
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
     <script type="text/javascript" src="../js/bscroll.js"></script>
-    <style>
-      .slide{
-        overflow: hidden;
-      }
-      .slide .slide-group{
-        position: relative;
-        overflow: hidden;
-        white-space: nowrap;
-      }
-      .slide .slide-item{
-        float: left;
-      }
-      .slide-item img{
-        width: 100%;
-      }
-      .slide .slide-group::after{
-        content: "";
-        display: table;
-        clear: both;
-      }
-    </style>
   </head>
   <body>
 
@@ -86,12 +65,11 @@
               bounce: false,
               snap: {
                 loop: false,
-                showDot: true,
-                autoPlay: false,
                 
-                speed: 600,
+                
+                speed: 400,
                 threshold: 0.3,
-                stepX: width,
+                
               }
           });
 

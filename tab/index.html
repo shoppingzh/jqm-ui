@@ -13,25 +13,38 @@
   </head>
   <body>
 
-    <div data-role="page" data-theme="a">
+    <div data-role="page" data-theme="a" style="height: 100%!important;">
       <div data-role="header" class="navbar" data-position="fixed" data-tap-toggle="false">
           <div class="nav">
               <a data-role="none" data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
               <h3 class="nav-title">Tab</h3>
           </div>
           <ul class="tab-list">
-            <li class="tab-item"><a data-role="none" href="javascript:;">推荐</a></li>
-            <li class="tab-item"><a data-role="none" href="javascript:;">LOOK直播</a></li>
-            <li class="tab-item active"><a data-role="none" href="javascript:;">解忧电话亭</a></li>
-            <li class="tab-item"><a data-role="none" href="javascript:;">兄弟</a></li>
+            <li class="tab-item active"><a data-role="none" href="javascript:;">页面1</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">页面2</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">页面3</a></li>
           </ul>
       </div>
-      <div role="main" class="ui-content">
+      <div role="main" class="">
           
-        <div id="pages">
-          <div id="page1"></div>
-          <div id="page2"></div>
-          <div id="page3"></div>
+        <div class="slide pages" style="width: 375px;">
+          <div class="slide-group">
+            <div class="slide-item" id="page1">
+                <div class="scroll-wrapper" style="height: 530px;">
+                  <div class="scroll-content" style="height: 530px;"></div>
+                </div>
+            </div>
+            <div class="slide-item" id="page2">
+              <div class="scroll-wrapper" style="height: 530px;">
+                <div class="scroll-content" style="height: 1500px;"></div>
+              </div>
+            </div>
+            <div class="slide-item" id="page3">
+                <div class="scroll-wrapper" style="height: 530px;">
+                  <div class="scroll-content" style="height: 380px;"></div>
+                </div>
+            </div>
+          </div>
         </div>
         
       </div>
@@ -60,8 +73,25 @@
     </div>
 
     <script type="text/javascript">
+
+      $('[data-role=page]').on({
+        pageshow: function(){
+          
+          var bh = $('body').outerHeight(),
+              hh = $('[data-role=header]').height(),
+              fh = $('[data-role=footer]').height();
+          $('[role=main]').css('height', bh - hh - fh);
+        }
+      });
+      
       $(function(){
 
+        // 加载页面
+        $('.pages .slide-item').each(function(){
+          $(this).find('.scroll-content').load('pages/' + $(this).attr('id') + '.html');
+        });
+
+        // 底部tab bar表现
         $('.tab-bar .bar-item').on('click', function(){
           $(this).addClass('active')
             .find('i').removeClass('fal').addClass('fas')
@@ -70,54 +100,50 @@
             .find('i').removeClass('fas').addClass('fal')
         });
         
-        $('#pages>div').each(function(){
-          //var $p = $(this);
-          //$p.load('pages/'+ $p.attr('id') +'.html');
+        // 滚动
+        
+        var $slide = $('.slide'),
+            width = $slide.width(),
+            $group = $slide.find('.slide-group'),
+            $items = $group.find('.slide-item');
+        $group.css('width', width * $items.length);
+        $items.css('width', width);
+
+        var bScroll = new BScroll($slide[0], {
+            scrollX: true,
+            scrollY: false,
+            snap: {
+              speed: 400,
+              threshold: .8,
+              stepX: width,
+            }
         });
 
-        $('#pages').wrap($('<div class="slide">').css('width', '100%'))
-          .addClass('slide-group')
-          .find('>div').addClass('slide-item');
-
-        $('.slide').each(function(){
-          var $slide = $(this),
-              width = $slide.width(),
-              $group = $slide.find('.slide-group'),
-              $items = $group.find('.slide-item');
-          $group.css('width', width * $items.length);
-          $items.css('width', width);
-
-          var bScroll = new BScroll(this, {
-              scrollX: true,
-              scrollY: false,
-              eventPassthrough: 'vertical',
-              bounce: false,
-              snap: {
-                loop: false,
-                showDot: true,
-                autoPlay: false,
-                
-                speed: 600,
-                threshold: 5,
-                stepX: width,
-              }
-          });
-
-          $('.prev').on('click', function(){
-            bScroll.prev();
-          });
-          $('.next').on('click', function(){
-            bScroll.next();
-          });
-
+        console.log(bScroll);
+        bScroll.on('scrollEnd', function(){
+          var page = this.getCurrentPage();
+          
+          $('.tab-list .tab-item:eq('+ page.pageX +')').addClass('active').siblings('.tab-item').removeClass('active');
+        });  
+        
+        $('.tab-list .tab-item').on('click', function(){
+          $(this).addClass('active').siblings('.tab-item').removeClass('active');
+          bScroll.goToPage($(this).index());
         });
+
+        $('.scroll-wrapper').each(function(){
+          var bs = new BScroll(this, {
+              scrollX: false,
+              scrollY: true,
+              bounce: true
+          });
+        });
+
       });
 
 
      
-      $('.tab-list .tab-item').on('click', function(){
-        $(this).addClass('active').siblings('.tab-item').removeClass('active');
-      });
+      
     </script>
 
   </body>
