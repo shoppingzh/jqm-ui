@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
+    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
+    <link rel="stylesheet" href="../css/jqm-ui-demos.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
+    <script type="text/javascript" src="../js/bscroll.js"></script>
+  </head>
+  <body>
+
+    <div data-role="page" data-theme="a">
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
+        <div class="nav">
+          <a data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+          <h3 class="nav-title">Slide</h3>
+        </div>
+      </div>
+      <div role="main" class="ui-content">
+
+        <div class="slide" style="width: 400px;">
+          <div class="slide-group">
+            <div class="slide-item">
+                <img src="../images/slide1.jpg">
+            </div>
+            <div class="slide-item">
+              <img src="../images/slide2.jpg">
+            </div>
+            <div class="slide-item">
+              <img src="../images/slide3.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="text-right">
+          <button data-role="none" class="btn blue prev"><i class="fas fa-arrow-left"></i></button>
+          <button data-role="none" class="btn blue next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+        <a href="tab-page.html" data-ajax="false" data-role="none" class="btn btn-fill teal">一个滑动页面的例子</a>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      $(function(){
+        $('.slide').each(function(){
+          var $slide = $(this),
+              width = $slide.width(),
+              $group = $slide.find('.slide-group'),
+              $items = $group.find('.slide-item');
+          $group.css('width', width * $items.length);
+          $items.css('width', width);
+
+          var bScroll = new BScroll(this, {
+              scrollX: true,
+              scrollY: false,
+              bounce: false,
+              snap: {
+                loop: false,
+                
+                
+                speed: 400,
+                threshold: 0.3,
+                
+              }
+          });
+
+          $('.prev').on('click', function(){
+            bScroll.prev();
+          });
+          $('.next').on('click', function(){
+            bScroll.next();
+          });
+
+        });
+      });
+      
+      
+      
+    </script>
+
+  </body>
+</html>

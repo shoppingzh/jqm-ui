@@ -3,115 +3,171 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="../js/bscroll.js"></script>
   </head>
   <body>
 
-    <div data-role="page" data-theme="a">
+    <div data-role="page" data-theme="a" style="height: 100%!important;">
       <div data-role="header" class="navbar" data-position="fixed" data-tap-toggle="false">
-        <a data-ajax="false" href="../menus.html" data-icon="carat-l">返回</a>
-        <h3>Switch</h3>
-        <a data-ajax="false" href="javascript:;" data-icon="info" data-iconpos="right">关于</a>
-        <div data-role="navbar" data-theme="a" data-position="fixed">
-          <ul>
-            <li class="active"><a href="#tab1">Tab 1</a></li>
-            <li><a href="#tab2">Tab 2</a></li>
-            <li><a href="#tab3">Tab 3</a></li>
+          <div class="nav">
+              <a data-role="none" data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+              <h3 class="nav-title">Tab</h3>
+          </div>
+          <ul class="tab-list">
+            <li class="tab-item active"><a data-role="none" href="javascript:;">页面1</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">页面2</a></li>
+            <li class="tab-item"><a data-role="none" href="javascript:;">页面3</a></li>
           </ul>
-        </div>
       </div>
-      <div role="main" class="ui-content">
+      <div role="main" class="">
           
-        <div data-role="tabs">
-          
-
-        <div id="tab1">
-          <p>
-            Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.
-
-Tabs have a particular set of markup that must be used in order for them to work properly:
-
-The tabs themselves must be in either an ordered () or unordered list
-Each tab "title" must be inside of a list item (and wrapped by an anchor th an href attribute
-Each tab panel may be any valid element but it must have an id which corresponds to the hash in the anchor of the associated tab.
-The content for each tab panel can be defined in-page or can be loaded via Ajax; both are handled automatically based on the href of the anchor associated with the tab. By default tabs are activated on click, but the events can be changed to hover via the event option.
-
-Below is some sample markup:
-Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.
-
-Tabs have a particular set of markup that must be used in order for them to work properly:
-
-The tabs themselves must be in either an ordered () or unordered list
-Each tab "title" must be inside of a list item (and wrapped by an anchor th an href attribute
-Each tab panel may be any valid element but it must have an id which corresponds to the hash in the anchor of the associated tab.
-The content for each tab panel can be defined in-page or can be loaded via Ajax; both are handled automatically based on the href of the anchor associated with the tab. By default tabs are activated on click, but the events can be changed to hover via the event option.
-
-Below is some sample markup:
-Tabs are generally used to break content into multiple sections that can be swapped to save space, much like an accordion.
-
-Tabs have a particular set of markup that must be used in order for them to work properly:
-
-The tabs themselves must be in either an ordered () or unordered list
-Each tab "title" must be inside of a list item (and wrapped by an anchor th an href attribute
-Each tab panel may be any valid element but it must have an id which corresponds to the hash in the anchor of the associated tab.
-The content for each tab panel can be defined in-page or can be loaded via Ajax; both are handled automatically based on the href of the anchor associated with the tab. By default tabs are activated on click, but the events can be changed to hover via the event option.
-
-Below is some sample markup:
-          </p>
+        <div class="slide pages" style="width: 375px;">
+          <div class="slide-group">
+            <div class="slide-item" id="page1">
+                <div class="scroll-wrapper" >
+                  <div class="scroll-content"></div>
+                </div>
+            </div>
+            <div class="slide-item" id="page2">
+              <div class="scroll-wrapper" >
+                <div class="scroll-content" ></div>
+              </div>
+            </div>
+            <div class="slide-item" id="page3">
+                <div class="scroll-wrapper">
+                  <div class="scroll-content"></div>
+                </div>
+            </div>
+          </div>
         </div>
-
-        <div id="tab2">
-          <p>
-When focus is on a tab, the following key commands are available:
-
-UP/LEFT: Move focus to the previous tab. If on first tab, moves focus to last tab. Activate focused tab after a short delay.
-DOWN/RIGHT: Move focus to the next tab. If on last tab, moves focus to first tab. Activate focused tab after a short delay.
-CTRL + UP/LEFT: Move focus to the previous tab. If on first tab, moves focus to last tab. The focused tab must be manually activated.
-CTRL + DOWN/RIGHT: Move focus to the next tab. If on last tab, moves focus to first tab. The focused tab must be manually activated.
-HOME: Move focus to the first tab. Activate focused tab after a short delay.
-END: Move focus to the last tab. Activate focused tab after a short delay.
-CTRL + HOME: Move focus to the first tab. The focused tab must be manually activated.
-CTRL + END: Move focus to the last tab. The focused tab must be manually activated.
-SPACE: Activate panel associated with focused tab.
-ENTER: Activate or toggle panel associated with focused tab.
-ALT/OPTION + PAGE UP: Move focus to the previous tab and immediately activate.
-ALT/OPTION + PAGE DOWN: Move focus to the next tab and immediately activate.
-When focus is in a panel, the following key commands are available:
-
-CTRL + UP: Move focus to associated tab.
-ALT/OPTION + PAGE UP: Move focus to the previous tab and immediately activate.
-ALT/OPTION + PAGE DOWN: Move focus to the next tab and immediately activate.
-          </p>
-        </div>
-
-        <div id="tab3">
-          <p>
-Theming
-The tabs widget uses the jQuery UI CSS framework to style its look and feel. If tabs specific styling is needed, the following CSS class names can be used for overrides or as keys for the classes option:
-
-ui-tabs: The outer container of the tabs. This element will additionally have a class of ui-tabs-collapsible when the collapsible option is set.
-ui-tabs-nav: The list of tabs.
-ui-tabs-tab: One of the items in the list of tabs.The active item will have the ui-tabs-active class. Any list item whose associated content is loading via an Ajax call will have the ui-tabs-loading class.
-ui-tabs-anchor: The anchors used to switch panels.
-ui-tabs-panel: The panels associated with the tabs. Only the panel whose corresponding tab is active will be visible.
-Dependencies
-UI Core
-Widget Factory
-Effects Core (optional; for use with the show and hide options)
-Additional Notes:
-This widget requires some functional CSS, otherwise it won't work. If you build a custom theme, use the widget's specific CSS file as a starting point.
-          </p>
-        </div>
-
-        </div>
-
-
+        
+      </div>
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <nav class="tab-bar">
+          <a data-role="none" class="bar-item">
+            <span class="icon"><i class="icon fal fa-home-lg-alt"></i></span>
+            <span class="text">首页</span>
+          </a>
+          <a data-role="none" class="bar-item active new">
+            <span class="icon"><i class="icon fas fa-comment"></i></span>
+            <span class="text">消息</span>
+          </a>
+          <a data-role="none" class="bar-item new">
+            <span class="icon"><i class="icon fal fa-calendar-check"></i></span>
+            <span class="text">待办</span>
+          </a>
+          <a data-role="none" class="bar-item">
+            <span class="icon">
+              <i class="icon fal fa-user"></i>
+            </span>
+            <span class="text">我</span>
+          </a>
+        </nav>
       </div>
     </div>
+
+    <script type="text/javascript">
+
+      var bScroll;
+      $('[data-role=page]').on({
+        pagecreate: function(){
+
+          // 底部tab bar表现
+          $('.tab-bar .bar-item').on('click', function(){
+            $(this).addClass('active')
+              .find('i').removeClass('fal').addClass('fas')
+              .end()
+              .siblings('.bar-item').removeClass('active')
+              .find('i').removeClass('fas').addClass('fal')
+          });
+
+          $('.tab-list .tab-item').on('click', function(){
+            $(this).addClass('active').siblings('.tab-item').removeClass('active');
+            bScroll.goToPage($(this).index());
+          });
+
+          
+
+        },
+        pageshow: function(){
+          
+          var bh = $('body').height(),
+              hh = $('[data-role=header]').height(),
+              fh = $('[data-role=footer]').height();
+          $('.scroll-wrapper').css('height', bh - hh - fh);
+
+          // 滚动
+        
+          var $slide = $('.slide'),
+              width = $slide.width(),
+              $group = $slide.find('.slide-group'),
+              $items = $group.find('.slide-item');
+          $group.css('width', width * $items.length);
+          $items.css('width', width);
+
+          bScroll = new BScroll($slide[0], {
+              scrollX: true,
+              scrollY: false,
+              bounce: false,
+              
+              snap: {
+                speed: 400,
+                threshold: .8,
+                stepX: width,
+              }
+          });
+
+          
+          bScroll.on('scrollEnd', function(){
+            var page = this.getCurrentPage();
+            $('.tab-list .tab-item:eq('+ page.pageX +')').addClass('active').siblings('.tab-item').removeClass('active');
+            loadPage(this);
+          });
+          // loadPage(bScroll);
+
+
+
+          $('.scroll-wrapper').each(function(){
+            var bs = new BScroll(this, {
+                scrollX: false,
+                scrollY: true,
+                bounce: true,
+                tap: true,
+                click: true,
+            });
+          });
+        }
+      });
+
+      function loadPage(bs){
+        // 加载页面
+        var page = bs.getCurrentPage();
+        var $scroller = $(bs.scroller),
+            $slideItem = $scroller.find('.slide-item:eq('+ page.pageX +')'),
+            $pageContent = $slideItem.find('.scroll-content');
+        if($pageContent.is(':empty')){
+          $pageContent.html('<i class="icon-loading"></i>');
+          $pageContent.load('pages/' + $slideItem.attr('id') + '.html', function(){
+
+          });
+        }
+      }
+      
+      // 加载页面
+      /* 不在这里加载了，滚动到什么页面加载什么内容
+      $('.pages .slide-item').each(function(){
+        $(this).find('.scroll-content').load('pages/' + $(this).attr('id') + '.html');
+      });
+      */
+
+      
+    </script>
 
   </body>
 </html>

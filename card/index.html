@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
@@ -13,10 +14,22 @@
 
     <div data-role="page" data-theme="a">
       <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
-        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
-        <h3>Card</h3>
+        <div class="nav">
+          <a data-ajax="false" href="../menus.html" class="nav-link back">首页</a>
+          <h3 class="nav-title">Card</h3>
+        </div>
       </div>
       <div role="main" class="ui-content">
+
+        <div class="demo">
+          <div class="card">
+            <div class="card-content">
+              <p><i class="far fa-info-circle grey"></i> 卡片是一种非常常用的组件，移动端的内容大多数都是以卡片的形式呈现，因此你应该好好了解卡片的使用原则。</p>
+              <p><a data-ajax="false" data-role="none" href="example1.html" class="btn btn-sm btn-hollow btn-square blue">卡片布局的例子</a></p>
+            </div>
+          </div>
+
+        </div>
 
         <div class="demo">
           <h5>普通卡片</h5>
@@ -47,7 +60,7 @@
           <h5>带图片的卡片 - 可用于显示丰富信息</h5>
           <div class="card">
             <div class="card-header card-header-pic" style="background-image: url('../images/card.jpg'); height: 30vw;">
-              <h3>你要的全拿走</h3>
+              <h3 class="white">你要的全拿走</h3>
             </div>
             <div class="card-content">
               <p class="color-grey">2019-01-15 14:46</p>
@@ -64,15 +77,19 @@
         <div class="demo">
           <h5>一个社交相关的例子</h5>
           <div class="card">
-            <div class="card-header card-header-media">
-              <img src="../images/avatar.jpg">
-              <div class="card-media-content color-lightdark">
-                <h5>王老六</h5>
-                <p>2018-12-16 12:45</p>
+            <div class="card-header">
+              <div class="item-content">
+                <div class="item-media"><img src="../images/avatar.jpg" style="width: 42px; height: 42px; border-radius: 3px;"></div>
+                <div class="item-inner">
+                  <div style="margin-left: 10px;">
+                    <h5 style="margin: 0;">王老六</h5>
+                    <p style="margin: 0;">2018-12-16 12:45</p>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="card-content">
-              <img src="../images/tour.jpg">
+              <img src="../images/tour.jpg" style="width: 100%;">
               <p>旅行，是一场修行</p>
               <p>努力使自己变得更好，加油！</p>
             </div>

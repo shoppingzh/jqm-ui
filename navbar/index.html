@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
-    <script type="text/javascript" src="../js/jquery.mobile-1.4.5.ui.js"></script>
+    <script type="text/javascript" src="../js/jquery.mobile.ui.js"></script>
   </head>
   <body>
 
@@ -65,40 +66,42 @@
         </ul>
         <button class="ui-btn ui-btn-sm ui-btn-dark ui-corner-all">提交</button>
       </div>
-      <div data-role="header" class="navbar" data-position="fixed" data-tap-toggle="false">
-        <a data-ajax="false" href="../menus.html" data-icon="carat-l">返回</a>
-        <h3>Navbar</h3>
-        <a data-ajax="false" href="#p1" data-icon="gear" data-iconpos="right">筛选</a>
+      <div data-role="header" data-position="fixed" data-tap-toggle="false" style="border-top: none;">
+        <div class="nav">
+          <a data-role="none" class="nav-link back" data-ajax="false" href="../menus.html">返回</a>
+          <h3 class="nav-title">Navbar</h3>
+          <!-- <a data-rel="panel" href="#p1" class="nav-link"><i class="fas fa-plus"></i></a> -->
+        </div>
       </div>
       <div role="main" class="ui-content">
         
         <div class="demo">
           <h5>普通导航栏</h5>
           <div data-role="header" class="navbar">
-            <a href="javascript:;">返回</a>
-            <h3>Navbar</h3>
-            <a href="javascript:;">筛选</a>
+            <div class="nav">
+              <a class="nav-link" data-ajax="false" href="../menus.html">
+                <i class="fas fa-chevron-left"></i> 首页
+              </a>
+              <h3 class="nav-title">Navbar</h3>
+            </div>
           </div>
         </div>
 
         <div class="demo">
-          <h5>带图标导航栏</h5>
+          <h5>纯图标导航栏</h5>
           <div data-role="header" class="navbar">
-            <a href="javascript:;" data-icon="carat-l">返回</a>
-            <h3>Navbar</h3>
-            <a href="javascript:;" data-icon="search" data-iconpos="right">筛选</a>
+            <div class="nav">
+              <a class="nav-link" data-ajax="false" href="../menus.html">
+                <i class="fas fa-chevron-left"></i>
+              </a>
+              <h3 class="nav-title">Navbar</h3>
+              <div class="nav-link-list">
+                <a href="##" class="nav-link"><i class="fas fa-search"></i></a>
+                <a href="##" class="nav-link"><i class="fas fa-ellipsis-v"></i></a>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="demo">
-          <h5>只有图标的导航栏</h5>
-          <div data-role="header" class="navbar">
-            <a href="javascript:;" class="ui-btn ui-icon-carat-l ui-btn-icon-right ui-btn-icon-notext"></a>
-            <h3>Navbar</h3>
-            <a href="javascript:;" class="ui-btn ui-icon-search ui-btn-icon-right ui-btn-icon-notext"></a>
-          </div>
-        </div>
-
 
       </div>
 

@@ -3,18 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="../css/fontawesome-free-5.7.2-web/css/all.css">
     <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css">
-    <link rel="stylesheet" href="../css/jquery.mobile-1.4.5.update.css">
+    <link rel="stylesheet" href="../css/jquery.mobile.ui.css">
     <link rel="stylesheet" href="../css/jqm-ui-demos.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="../js/jquery.mobile-1.4.5.js"></script>
+
+    <style type="text/css">
+      .colors span{ margin-right: 5px; font-weight: 500; font-size: 20px; }
+    </style>
   </head>
   <body>
 
     <div data-role="page" data-theme="a">
       <div data-role="header" data-position="fixed" data-tap-toggle="false" class="navbar">
-        <a data-ajax="false" href="../menus.html" data-icon="carat-l" >返回</a>
-        <h3>Text</h3>
+          <div class="nav">
+              <a data-ajax="false" href="../menus.html" class="nav-link"><i class="fas fa-chevron-left"></i> 首页</a>
+              <h3 class="nav-title">Text</h3>
+          </div>
       </div>
       <div role="main" class="ui-content">
 
@@ -27,13 +34,25 @@
 
        <p>段落内容：这是一个段落内容段落内容：这是一个段落内容段落内容：这是一个段落内容段落内容：这是一个段落内容段落内容：这是一个段落内容</p>
 
-       <p class="color-primary">Primary text</p>
-       <p class="color-info">Info text</p>
-       <p class="color-success">Success text</p>
-       <p class="color-warning">Warning text</p>
-       <p class="color-danger">Danger text</p>
-       <p class="color-grey">Grey text</p>
-       <p class="color-lightgrey">Light grey text</p>
+       <p class="colors">
+          <span class="blue">Blue</span><br>
+          <span class="lightblue">Light blue</span><br>
+          <span class="green">Green</span><br>
+          <span class="yellow">Yellow</span><br>
+          <span class="orange">Orange</span><br>
+          <span class="deeporange">Deep orange</span><br>
+          <span class="pink">Pink</span><br>
+          <span class="red">Red</span><br>
+          <span class="teal">Teal</span><br>
+          <span class="lime">Lime</span><br>
+          <span class="purple">Purple</span><br>
+          <span class="deeppurple">Deep purple</span><br>
+          <span class="grey">Grey</span><br>
+          <span class="lightgrey">Light grey</span><br>
+          <span class="black">Black</span><br>
+       </p>
+       
+
 
       </div>
     </div>
